@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lexend Exa', sans-serif;
+            background: linear-gradient(135deg, #010121, #000000, #00050b);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, #da4a6c, #ff6b9d, #c44569);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .interface {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .interface a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px 20px;
+            aspect-ratio: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .interface a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .interface a:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: #da4a6c;
+            box-shadow: 0 20px 40px rgba(218, 74, 108, 0.3);
+        }
+
+        .interface a:hover::before {
+            opacity: 1;
+        }
+
+        .interface img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid rgba(218, 74, 108, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .interface a:hover img {
+            border-color: #da4a6c;
+            transform: scale(1.1);
+        }
+
+        .interface h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #da4a6c;
+        }
+
+        .interface p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+
+        .interface p:first-of-type {
+            font-weight: 600;
+            color: #ff6b9d;
+        }
+
+        .interface p:nth-of-type(2) {
+            font-style: italic;
+            color: #ffc048;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #da4a6c;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            z-index: 9999;
+            opacity: 0.7;
+        }
+        
+        .scroll-to-top:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .scroll-to-top.show {
+            opacity: 0.7;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .title h1 {
+                font-size: 2rem;
+            }
+
+            .title p {
+                font-size: 1rem;
+            }
+
+            .interface {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                max-width: 400px;
+            }
+
+            .interface a {
+                padding: 25px 15px;
+            }
+
+            .interface img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .interface h3 {
+                font-size: 1.2rem;
+            }
+
+            .interface p {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .interface {
+                gap: 15px;
+            }
+
+            .interface a {
+                padding: 20px 10px;
+            }
+
+            .interface img {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 15px;
+            }
+
+            .interface h3 {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+
+            .interface p {
+                font-size: 0.75rem;
+                margin-bottom: 5px;
+            }
+        }
+
+        /* Tablet landscape - 2x2 grid */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .interface {
+                gap: 25px;
+            }
+        }
+
+        /* Touch improvements */
+        @media (max-width: 1023px) {
+            .interface a {
+                -webkit-tap-highlight-color: transparent;
+                touch-action: manipulation;
+            }
+
+            .interface a:active {
+                transform: scale(0.95);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="browsergame.html">Browser Game</a>
+          <a href="lore.html">Lore</a>
+          <a href="Protagonist/protagonist.html">Protagonist</a>
+          <a href="Story/world.html">Story</a>
+        </div>
+      </div>
+      
+      <style>
+      .menu-panel {
+        position: fixed;
+        top: 20px;     /* distance from top */
+        right: 20px;   /* distance from right */
+        z-index: 9999;
+        text-align: right;
+      }
+      
+      /* Button styling */
+      .menu-toggle {
+        background: linear-gradient(45deg, #da4a6c, #ff6b9d);
+        border: none;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      /* Menu content */
+      #menuContent {
+        display: none; /* hidden initially */
+        margin-top: 8px;
+        background: rgba(0,0,0,0.8);
+        border-radius: 8px;
+        border: 2px solid #da4a6c;
+        text-align: right; /* aligns links to right */
+      }
+      
+      /* Links inside menu */
+      #menuContent a {
+        display: block;
+        color: #ff6b9d;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+      
+      #menuContent a:hover {
+        color: #ffc;
+      }
+      </style>
+      
+      <script>
+      function toggleMenu() {
+        const menu = document.getElementById('menuContent');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = 'none';
+        }
+      }
+      </script>
+      
+
+    <div class="container">
+        <div class="title">
+            <h1>GODTHRONE</h1>
+            <p>Choose Your Path</p>
+        </div>
+
+        <div class="interface">
+            <a href="browsergame.html">
+                <img src="img/avatar-player/joker.png" alt="browsergame">
+                <h3>Browser Game</h3>
+                <p>Enter Godthrone, a realm of blood, steel, and eternal battle.</p>
+                <p>Choose your character and embrace your fate.</p>
+                <p>Only death can crown a true victor.</p>
+            </a>
+            
+            <a href="lore.html">
+                <img src="img/lore/MacGuffin-antimagic.png" alt="lore">
+                <h3>Lore</h3>
+                <p>Every shadow has a story.</p>
+                <p>Discover the legends of heroes and villains alike. Explore the lore and learn the secrets of Godthrone.</p>
+                <p>The stories are written in blood and the shadows are watching.</p>
+            </a>
+            
+            <a href="Protagonist/protagonist.html">
+                <img src="img/avatar-player/hoodini.png" alt="protagonist">
+                <h3>Protagonists</h3>
+                <p>Every choice stains the soul.</p>
+                <p>Explore the story of those who survives the darkness.</p>
+                <p>Their journey ends only in death.</p>
+            </a>
+            
+            <a href="Story/world.html">
+                <img src="img/lore/purebloods1.png" alt="story">
+                <h3>Story</h3>
+                <p>Welcome to the story of Godthrone.</p>
+                <p>Dare to read, for what unfolds may haunt your very soul.</p>
+                <p>Witness how legends and nightmares are born.</p>
+            </a>
+        </div>
+    </div>
+
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Show button when scrolling
+        window.onscroll = function() {
+            const button = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        // Smooth scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
