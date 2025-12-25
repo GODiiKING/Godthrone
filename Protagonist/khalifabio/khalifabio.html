@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone’s protagonist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../lore.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="">
+        <h2>Godthrone’s Protagonist</h2>
+    </header>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../browsergame.html">Browser Game</a>
+          <a href="../../lore.html">Lore</a>
+          <a href="../../Story/world.html">Story</a>
+        </div>
+      </div>
+      
+      <style>
+      .menu-panel {
+        position: fixed;
+        top: 20px;     /* distance from top */
+        right: 20px;   /* distance from right */
+        z-index: 9999;
+        text-align: right;
+      }
+      
+      /* Button styling */
+      .menu-toggle {
+        background: linear-gradient(45deg, #da4a6c, #ff6b9d);
+        border: none;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      /* Menu content */
+      #menuContent {
+        display: none; /* hidden initially */
+        margin-top: 8px;
+        background: rgba(0,0,0,0.8);
+        border-radius: 8px;
+        border: 2px solid #da4a6c;
+        text-align: right; /* aligns links to right */
+      }
+      
+      /* Links inside menu */
+      #menuContent a {
+        display: block;
+        color: #ff6b9d;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+      
+      #menuContent a:hover {
+        color: #ffc;
+      }
+      </style>
+      
+      <script>
+      function toggleMenu() {
+        const menu = document.getElementById('menuContent');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = 'none';
+        }
+      }
+      </script>
+      
+    <!-- Main Content Section -->
+    <section class="content">
+        <!-- Path Lore Section -->
+        <div class="lore-section" id="">
+                <div class="stat-section" id="">
+                    <h3>Khalifa: Blood and Borne</h3>
+                    <div class="container">
+                        <!-- <div class="text-1"> -->
+                            <!-- <div class="text-content"> -->
+                                <img src="images/deathmonger.jpg" alt="map" width="200px" height="200px">
+                                <div class="text-details">
+                                    <h3>Background</h3>
+                        <p>Making death itself beg for mercy.</p>
+                        <p>A virus of endings, infecting every moment with the promise of something worse than oblivion.</p>
+                        <p>Not a champion of any-cause, nor a savior of any realms.</p>
+                        <p>Conceived not in darkness nor void, but in the cancer that grows between heartbeats</p>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+                                <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="stat-section" id="">
+<h3>Leviathan Horror</h3>
+<div class="container">
+    <!-- <div class="text-1"> -->
+        <!-- <div class="text-content"> -->
+            <img src="images/khalifa1.jpg" alt="map" width="600px" height="400px">
+            <div class="text-details">
+                <div class="subtext">
+                    <h3></h3>
+                    <p></p>
+                    <h3>Leviathan Horror</h3>
+                    <p>Khalifa: Blood and Borne</p>
+                    <h3>Attributes</h3>
+                    <p>Overall Power Level: 60/100</p>
+                    <h3>Alignment</h3>
+                    <p>Neutral Evil</p>
+                    <h3>Khalifa's Proficiencies</h3>
+                    <p>Eternal Sacrifice</p>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="stat-section" id="">
+<h3>Attributes</h3>
+<div class="container">
+    <div class="text-details">
+    </div>
+</div>
+</div>
+<h3>Overall Power Level: 60/100</h3>
+<h4>Here are Khalifa's attribute stats, reflecting his power and role as the Leviathan Horror:</h4>
+<h3>Khalifa's Attributes</h3>
+<br>
+</div>
+    <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+<div class="stat-section" id="">
+<div class="container">
+<div class="text-1">
+<div class="text-content">
+<img src="img/strength.png" alt="">
+<div class="text-details">
+<h3>Strength: ★★★★☆</h3>
+<p>Limbo</p>
+<h5>Rising gave 10+ stats across attributes (Duration: 10 seconds)</h5>
+</div>
+</div>
+</div>
+<div class="text-1">
+<div class="text-content">
+<img src="img/speed.png" alt="">
+<div class="text-details">
+<h3>Speed: ★☆☆☆</h3>
+<p>Limbo</p>
+<h5>Rising gave 10+ stats across attributes (Duration: 10 seconds)</h5>
+</div>
+</div>
+</div>
+<div class="text-1">
+<div class="text-content">
+<img src="img/stamina.png" alt="">
+<div class="text-details">
+<h3>Stamina: ★☆☆☆☆</h3>
+<p>Endless Torment</p>
+<h5>Rising infinitely every (Duration: 10 seconds)</h5>
+</div>
+</div>
+</div>
+<div class="text-1">
+<div class="text-content">
+<img src="img/magic.png" alt="">
+<div class="text-details">
+<h3>Magic: ★☆☆☆☆</h3>
+<p>Limbo</p>
+<h5>Rising gave 10+ stats across attributes (Duration: 10 seconds)</h5>
+</div>
+</div>
+</div>
+<div class="text-1">
+<div class="text-content">
+<img src="img/wisdom.png" alt="">
+<div class="text-details">
+<h3>Wisdom: ★☆☆☆☆</h3>
+<p>Limbo</p>
+<h5>Rising gave 10+ stats across attributes (Duration: 10 seconds)</h5>
+</div>
+</div>
+</div>
+<div class="text-1">
+<div class="text-content">
+<img src="img/creation.png" alt="">
+<div class="text-details">
+<h3>Creation: ★☆☆☆☆</h3>
+<p>Limbo</p>
+<h5>Rising gave 10+ stats across attributes (Duration: 10 seconds)</h5>
+</div>
+</div>
+</div>
+<div class="text-1">
+<div class="text-content">
+<img src="img/anti-magic.png" alt="">
+<div class="text-details">
+<h3>Anti-Magic: ★★★★★</h3>
+<p>Limbo</p>
+<h5>Rising gave 10+ stats across attributes (Duration: 10 seconds)</h5>
+</div>
+</div>
+</div>
+<div class="text-1">
+<div class="text-content">
+<img src="img/arcane-magic.png" alt="">
+<div class="text-details">
+<h3>Arcane Magic: ★☆☆☆☆</h3>
+<p>Limbo</p>
+<h5>Rising gave 10+ stats across attributes (Duration: 10 seconds)</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="stat-section" id="">
+<div class="container">
+<!-- <div class="text-1"> -->
+<!-- <div class="text-content"> -->
+    <div class="text-details">
+    </div>
+</div>
+</div>
+<br>
+</div>
+    <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+<div class="stat-section" id="">
+<h3>Alignment</h3>
+<div class="container">
+<div class="text-1">
+<div class="text-content">
+<img src="img/lore/purebloods1.png" alt="">
+<div class="text-details">
+<h3>Neutral Evil</h3>
+<p>A neutral evil character is typically selfish and has no qualms about turning on allies-of-the-moment, and usually makes allies primarily to further their own goals. A neutral evil character has no compunctions about harming others to get what they want, but neither will they go out of their way to cause carnage or mayhem when they see no direct benefit for themselves. Another valid interpretation of neutral evil holds up evil as an ideal, doing evil for evil's sake and trying to spread its influence. Examples of the first type are an assassin who has little regard for formal laws but does not needlessly kill, a henchman who plots behind their superior's back, or a mercenary who readily switches sides if made a better offer. An example of the second type would be a masked killer who strikes only for the sake of causing fear and distrust in the community.</p>
+<h5>Coming Soon</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="stat-section" id="">
+<div class="container">
+<!-- <div class="text-1"> -->
+<!-- <div class="text-content"> -->
+    <div class="text-details">
+</div>
+</div>
+<h3>Khalifa's Proficiencies</h3>
+</div>
+    <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+<div class="stat-section" id="">
+<h3>Magic</h3>
+<div class="container">
+<div class="text-1">
+<div class="text-content">
+<img src="img/firemagic.png" alt="">+<img src="img/naturemagic.png" alt="">+<img src="img/airmagic.png" alt="">+<img src="img/watermagic.png" alt="">
+<div class="text-details">
+<h3>Divine Dealer</h3>
+<p>(Fire, Nature, Air, Water)</p>
+<h5>Giggle as their bones turn to ash, dying in blissful agony as my divine overdose drags their souls screaming into eternal addiction</h5>
+</div>
+</div>
+</div>
+<div class="text-1">
+<div class="text-content">
+<img src="img/deathmagic.png" alt="">+<img src="img/lifemagic.png" alt="">+<img src="img/lovemagic.png" alt="">
+<div class="text-details">
+<h3>Soul Blunt</h3>
+<p>(Death, Life, Love)</p>
+<h5>Exhaling their life force as they crave the death I deny them</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+<div class="stat-section" id="">
+<h3>Anti-Magic</h3>
+<div class="container">
+<div class="text-1">
+<div class="text-content">
+<img src="img/deathscroll.png" alt="">
+<div class="text-details">
+    <h3>Kief of the Void</h3>
+    <p>(Death Scroll)</p>
+    <h5>Death recognizes my voice and bows, for I speak with the tongue of the departed</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+<div class="stat-section" id="">
+    <h3>Arcane Magic</h3>
+    <div class="container">
+    <div class="text-1">
+    <div class="text-content">
+    <img src="img/devilfruit.png" alt="">
+    <div class="text-details">
+        <h3>Devil's Brownies</h3>
+        <p>(Devil Fruit)</p>
+        <h5>To look upon the fruit is to feel overwhelming hunger.</h5>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+<div class="stat-section" id="">
+<h3>Forbidden Sword</h3>
+<div class="container">
+<div class="text-1">
+<div class="text-content">
+<img src="img/ShinigamiBlessing.jpg" alt="">
+<div class="text-details">
+    <h3>Shinigami Blessing</h3>
+    <img src="img/explosionsword.png" alt="">+<img src="img/ragesword.png" alt="">+<img src="img/spikesword.png" alt="">
+    <p>(explosionsword, ragesword, spikesword)</p>
+    <h5>When the death gods sought to create a weapon of merciful ending, they blessed the fusion of three damned blades: the Explosionsword that shattered worlds, the Ragesword that burned with infinite fury, and the Spikesword that pierced hope itself. Their divine touch was meant to sanctify this unholy trinity, but instead created the universe's cruelest joke - a weapon that promises salvation while delivering pure agony.</h5>
+    <br>
+    <h5>The Explosionsword's essence detonates not outward but inward, each strike creating implosions that collapse the victim's very concept of peace. What should be a quick death becomes an eternal moment of shattering, where every atom screams in synchronized agony. The divine blessing doesn't heal this violence - it sanctifies it, making the pain feel deserved.</h5>
+    <br>
+    <h5>The Ragesword contributes a wrath so pure it transcends mortal fury, becoming divine indignation made manifest. But this isn't righteous anger - it's the rage of creation itself, furious at having to witness such corruption of its gifts. The blade burns not with hellfire, but with the disappointed fury of abandoned gods.</h5>
+    <br>
+    <h5>The Spikesword's barbed essence doesn't just pierce flesh - it impales the soul on hooks of blessed torment, ensuring that each wound creates pathways for divine judgment to flow through. Every cut becomes a window through which celestial disapproval pours like acid.</h5>
+    <br>
+    <h5>The death gods now weep at their creation, realizing they have forged not mercy, but the cruelest possible blessing - a weapon that makes its victims feel grateful for their suffering, believing their agony is a gift from benevolent deities.</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <body>
+
+    <!-- Play Game button -->
+    <button class="play-game-btn" onclick="window.location.href='../../browsergame.html'">
+    Play Game
+</button>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Show button with full opacity when scrolling
+        window.onscroll = function() {
+            const button = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <style>
+        .scroll-to-top {
+            position: fixed !important;
+            bottom: 20px !important;
+            right: 20px !important;
+            background-color: #da4a6c !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 50% !important;
+            width: 50px !important;
+            height: 50px !important;
+            font-size: 20px !important;
+            cursor: pointer !important;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+            transition: all 0.3s ease !important;
+            z-index: 9999 !important;
+            opacity: 0.5 !important;
+            display: block !important;
+        }
+
+        .scroll-to-top:hover {
+            opacity: 1 !important;
+            transform: scale(1.1) !important;
+        }
+
+        .play-game-btn {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            padding: 12px 25px;
+            background-color:  #da4a6c;
+            color: white;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: 0.3s ease;
+            z-index: 9999;
+        }
+
+        .play-game-btn:hover {
+            background-color: #ff5555;
+            transform: scale(1.05);
+        }
+    </style>
+
+</body>
+    
+        <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mobile Optimized Lore Page</title>
+        <style>
+            /* Mobile Optimizations */
+            
+            /* Mobile phones (up to 767px) */
+            @media (max-width: 767px) {
+                body {
+                    padding: 0;
+                    -webkit-text-size-adjust: 100%;
+                    -webkit-font-smoothing: antialiased;
+                }
+                
+                .header {
+                    padding: 15px 10px;
+                }
+                
+                .header h2 {
+                    font-size: 1.5em;
+                    margin-bottom: 8px;
+                }
+                
+                .header p {
+                    font-size: 1em;
+                }
+                
+                .content {
+                    margin: 10px auto;
+                    padding: 15px;
+                }
+                
+                .lore-section h3, 
+                .stat-section h3, 
+                .alignment-section h3 {
+                    font-size: 1.4em;
+                    margin-bottom: 12px;
+                }
+                
+                .lore-text, 
+                .alignment-section p, 
+                .stat-section p {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+                
+                .container {
+                    flex-direction: column;
+                    gap: 15px;
+                }
+                
+                .text-1 {
+                    flex: 1 1 100%;
+                    padding: 15px;
+                    margin-bottom: 15px;
+                }
+                
+                .text-content img {
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 12px;
+                }
+                
+                .text-details h3 {
+                    font-size: 1.1em;
+                    margin-bottom: 8px;
+                }
+                
+                .text-details p {
+                    font-size: 0.85em;
+                    line-height: 1.4;
+                }
+                
+                .alignment-section .container {
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                }
+                
+                .alignment-section .text-1 {
+                    padding: 12px;
+                }
+                
+                .alignment-section .text-content h3 {
+                    font-size: 1.2em;
+                    margin-bottom: 6px;
+                }
+                
+                .alignment-section .text-content p {
+                    font-size: 0.85em;
+                }
+            }
+            
+            /* Small mobile phones (up to 480px) */
+            @media (max-width: 480px) {
+                .header {
+                    padding: 12px 8px;
+                }
+                
+                .header h2 {
+                    font-size: 1.3em;
+                }
+                
+                .header p {
+                    font-size: 0.9em;
+                }
+                
+                .content {
+                    padding: 12px;
+                }
+                
+                .lore-section h3, 
+                .stat-section h3, 
+                .alignment-section h3 {
+                    font-size: 1.2em;
+                }
+                
+                .text-1 {
+                    padding: 12px;
+                }
+                
+                .text-content img {
+                    width: 70px;
+                    height: 70px;
+                }
+                
+                .text-details h3 {
+                    font-size: 1em;
+                }
+                
+                .text-details p {
+                    font-size: 0.8em;
+                }
+            }
+            
+            /* Tablets (768px to 1023px) */
+            @media (min-width: 768px) and (max-width: 1023px) {
+                .container {
+                    gap: 18px;
+                }
+                
+                .text-1 {
+                    flex: 1 1 calc(50% - 18px);
+                }
+                
+                .alignment-section .container {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            /* Touch-friendly improvements for all mobile devices */
+            @media (max-width: 1023px) {
+                /* Make all clickable elements touch-friendly */
+                a, button {
+                    min-height: 44px;
+                    min-width: 44px;
+                    -webkit-tap-highlight-color: transparent;
+                    touch-action: manipulation;
+                }
+                
+                /* Improve text selection */
+                .text-1 {
+                    -webkit-user-select: text;
+                    -moz-user-select: text;
+                    -ms-user-select: text;
+                    user-select: text;
+                }
+                
+                /* Better hover effects for touch devices */
+                .text-1:hover {
+                    transform: none;
+                }
+                
+                .text-1:active {
+                    transform: scale(0.98);
+                    transition: transform 0.1s;
+                }
+            }
+            
+            /* Landscape orientation adjustments */
+            @media (orientation: landscape) and (max-height: 500px) {
+                .header {
+                    padding: 10px;
+                }
+                
+                .header h2 {
+                    font-size: 1.4em;
+                    margin-bottom: 5px;
+                }
+                
+                .content {
+                    padding: 10px;
+                }
+            }
+            
+            /* Remove horizontal scrollbar */
+            @media (max-width: 1023px) {
+                html, body {
+                    overflow-x: hidden;
+                }
+                
+                * {
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    </html>
+    
