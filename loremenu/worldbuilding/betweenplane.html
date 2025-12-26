@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone’s Lore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="">
+        <h2>Godthrone’s Lore</h2>
+    </header>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../lore.html">Lore</a>
+          <a href="../../Protagonist/protagonist.html">Protagonist</a>
+          <a href="../../Story/world.html">Story</a>
+        </div>
+      </div>
+      
+      <style>
+      .menu-panel {
+        position: fixed;
+        top: 20px;     /* distance from top */
+        right: 20px;   /* distance from right */
+        z-index: 9999;
+        text-align: right;
+      }
+      
+      /* Button styling */
+      .menu-toggle {
+        background: linear-gradient(45deg, #da4a6c, #ff6b9d);
+        border: none;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      /* Menu content */
+      #menuContent {
+        display: none; /* hidden initially */
+        margin-top: 8px;
+        background: rgba(0,0,0,0.8);
+        border-radius: 8px;
+        border: 2px solid #da4a6c;
+        text-align: right; /* aligns links to right */
+      }
+      
+      /* Links inside menu */
+      #menuContent a {
+        display: block;
+        color: #ff6b9d;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+      
+      #menuContent a:hover {
+        color: #ffc;
+      }
+      </style>
+      
+      <script>
+      function toggleMenu() {
+        const menu = document.getElementById('menuContent');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = 'none';
+        }
+      }
+      </script>
+      
+    <!-- Main Content Section -->
+    <section class="content">
+        <!-- Path Lore Section -->
+        <div class="lore-section" id="">
+
+        <!-- Main Content Section -->
+    <section class="content" id="">
+        <!-- Path Lore Section -->
+        <div class="lore-section" id="">
+            <h3>Godthrone Continent</h3>
+            <p class="lore-text">
+                <strong>A mythical landmass blessed by the gods:</strong><br>
+                The Godthrone Continent is a massive landmass, completely detached from the rest of the world, governed by bizarre rules and unique physics. Each region within the continent is distinct, with no two areas alike. The connection between the planes can best be described as a giant wheel, with the Material Plane resting at its center. As one ventures further from the center, they encounter planes that embody the fundamental aspects of the physical world.</p>
+
+                <div class="stat-section" id="">
+                    <br>
+                    <h3>Between Plains</h3>
+                        </div>
+                        <h4>Lore of Between Plains</h4>
+                        <h3>Ash – Ice – Magma – Ooze</h3>
+                        <p>The Between Plains are realms of transition, where the elements merge, collide, and struggle for dominance. These are unstable and volatile zones, caught between the foundational forces of the Inner Planes. Here, the elements blur into strange and chaotic landscapes, each embodying the tension and fusion of two opposing forces.</p>
+                        <br>
+                        <h4>Ash Plain</h4>
+                        <p>Where Fire and Air Converge
+                            <br><br>
+                            The Ash Plain is a desolate wasteland, a vast expanse of ashen skies and smoldering ruins. Volcanic eruptions spew clouds of choking ash into the air, which settles in dunes across a cracked, barren landscape. Fiery embers drift like snow, lighting the dim expanse with an eerie, flickering glow. The air is hot and dry, suffocating for those unprepared.</p>
+                            <p>Inhabitants of the Ash Plain include:</p>
+                        <br>
+                        <ul>
+                            <li>inder Spirits: Elementals that hover as fiery shadows, feeding on the heat of the land.</li>
+                            <br>
+                            <li>Ashborn Wraiths: Ghostly beings that rise from the scorched ground, remnants of those consumed by fire.</li>
+                        </ul>
+                        <br>
+                        <h4>Ooze Plain</h4>
+                        <p>Where Water and Earth Blend</p>
+                        <br><br>
+                        <p>The Ooze Plain is a murky, swamp-like expanse of sludge and mire. The ground is soft and treacherous, sucking in anything that lingers too long. Pools of strange, bubbling liquid dot the landscape, and the air carries a faint, acrid tang. This realm is alive with movement, as oozes and slimes of all kinds shift and flow across the land.</p>
+                        <br>
+                        <p>Inhabitants of the Ooze Plain include:</p>
+                        <br>
+                        <ul>
+                            <li>Gelatinous Horrors: Massive, semi-transparent oozes that engulf anything in their path.</li>
+                            <br>
+                            <li>Mud Elementals: Lumpy, shapeshifting beings that drag intruders into the mire.</li>
+                        </ul>
+                        <br>
+                        <h4>The Role of the Between Plains</h4>
+                        <p>The Between Plains act as bridges between the core elements of the Inner Planes. They are places of flux and experimentation, where the natural laws of the pure elemental planes bend and intertwine. The volatile nature of these realms makes them dangerous but also uniquely rewarding for those brave enough to explore.</p>
+                        <br>
+                        <h4>Connections to the Material Plane</h4>
+                        <p>The Between Plains influence the Material Plane subtly, manifesting as volcanic eruptions (Magma), polar vortices (Ice), sinkholes (Ooze), or choking wildfires (Ash). Mages and alchemists often seek these planes to harness their chaotic energy, though such efforts frequently result in disaster.
+                            <br><br>
+                            These transitional realms are not just pathways—they are challenges, crucibles of elemental power where only the strong and adaptable survive. Those who master their chaotic forces gain access to potent magic, new materials, and unparalleled understanding of the elements' interplay.</p>
+        </div>
+
+        <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+        <div class="stat-section" id="">
+            <h3></h3>
+            <div class="container">
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="img/lore/betweenplains.png" alt="">
+                        <div class="text-details">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="img/lore/betweenplains2.png" alt="">
+                        <div class="text-details">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="img/lore/betweenplains3.png" alt="">
+                        <div class="text-details">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="img/lore/betweenplains4.png" alt="">
+                        <div class="text-details">
+                            <h3></h3>
+                            <p</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    <script src="script.js"></script>
+
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+// Show button with full opacity when scrolling
+window.onscroll = function() {
+    const button = document.getElementById("scrollToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.classList.add("show");
+    } else {
+        button.classList.remove("show");
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+<style>
+    .scroll-to-top {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        background-color: #da4a6c !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 50% !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+        cursor: pointer !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+        transition: all 0.3s ease !important;
+        z-index: 9999 !important;
+        opacity: 0.5 !important;
+        display: block !important;
+    }
+    
+    .scroll-to-top:hover {
+        opacity: 1 !important;
+        transform: scale(1.1) !important;
+    }
+    </style>
+    <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Optimized Lore Page</title>
+    <style>
+        /* Mobile Optimizations */
+        
+        /* Mobile phones (up to 767px) */
+        @media (max-width: 767px) {
+            body {
+                padding: 0;
+                -webkit-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+            .header {
+                padding: 15px 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.5em;
+                margin-bottom: 8px;
+            }
+            
+            .header p {
+                font-size: 1em;
+            }
+            
+            .content {
+                margin: 10px auto;
+                padding: 15px;
+            }
+            
+            .lore-section h3, 
+            .stat-section h3, 
+            .alignment-section h3 {
+                font-size: 1.4em;
+                margin-bottom: 12px;
+            }
+            
+            .lore-text, 
+            .alignment-section p, 
+            .stat-section p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            
+            .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .text-1 {
+                flex: 1 1 100%;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .text-content img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 12px;
+            }
+            
+            .text-details h3 {
+                font-size: 1.1em;
+                margin-bottom: 8px;
+            }
+            
+            .text-details p {
+                font-size: 0.85em;
+                line-height: 1.4;
+            }
+            
+            .alignment-section .container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .alignment-section .text-1 {
+                padding: 12px;
+            }
+            
+            .alignment-section .text-content h3 {
+                font-size: 1.2em;
+                margin-bottom: 6px;
+            }
+            
+            .alignment-section .text-content p {
+                font-size: 0.85em;
+            }
+        }
+        
+        /* Small mobile phones (up to 480px) */
+        @media (max-width: 480px) {
+            .header {
+                padding: 12px 8px;
+            }
+            
+            .header h2 {
+                font-size: 1.3em;
+            }
+            
+            .header p {
+                font-size: 0.9em;
+            }
+            
+            .content {
+                padding: 12px;
+            }
+            
+            .lore-section h3, 
+            .stat-section h3, 
+            .alignment-section h3 {
+                font-size: 1.2em;
+            }
+            
+            .text-1 {
+                padding: 12px;
+            }
+            
+            .text-content img {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .text-details h3 {
+                font-size: 1em;
+            }
+            
+            .text-details p {
+                font-size: 0.8em;
+            }
+        }
+        
+        /* Tablets (768px to 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                gap: 18px;
+            }
+            
+            .text-1 {
+                flex: 1 1 calc(50% - 18px);
+            }
+            
+            .alignment-section .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Touch-friendly improvements for all mobile devices */
+        @media (max-width: 1023px) {
+            /* Make all clickable elements touch-friendly */
+            a, button {
+                min-height: 44px;
+                min-width: 44px;
+                -webkit-tap-highlight-color: transparent;
+                touch-action: manipulation;
+            }
+            
+            /* Improve text selection */
+            .text-1 {
+                -webkit-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+                user-select: text;
+            }
+            
+            /* Better hover effects for touch devices */
+            .text-1:hover {
+                transform: none;
+            }
+            
+            .text-1:active {
+                transform: scale(0.98);
+                transition: transform 0.1s;
+            }
+        }
+        
+        /* Landscape orientation adjustments */
+        @media (orientation: landscape) and (max-height: 500px) {
+            .header {
+                padding: 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.4em;
+                margin-bottom: 5px;
+            }
+            
+            .content {
+                padding: 10px;
+            }
+        }
+        
+        /* Remove horizontal scrollbar */
+        @media (max-width: 1023px) {
+            html, body {
+                overflow-x: hidden;
+            }
+            
+            * {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+</html>
+</body>
+</html>

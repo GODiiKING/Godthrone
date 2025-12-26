@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone’s Lore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="">
+        <h2>Godthrone’s Lore</h2>
+    </header>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../browsergame.html">Browser Game</a>
+          <a href="../../Protagonist/protagonist.html">Protagonist</a>
+          <a href="../../Story/world.html">Story</a>
+        </div>
+      </div>
+      
+      <style>
+      .menu-panel {
+        position: fixed;
+        top: 20px;     /* distance from top */
+        right: 20px;   /* distance from right */
+        z-index: 9999;
+        text-align: right;
+      }
+      
+      /* Button styling */
+      .menu-toggle {
+        background: linear-gradient(45deg, #da4a6c, #ff6b9d);
+        border: none;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      /* Menu content */
+      #menuContent {
+        display: none; /* hidden initially */
+        margin-top: 8px;
+        background: rgba(0,0,0,0.8);
+        border-radius: 8px;
+        border: 2px solid #da4a6c;
+        text-align: right; /* aligns links to right */
+      }
+      
+      /* Links inside menu */
+      #menuContent a {
+        display: block;
+        color: #ff6b9d;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+      
+      #menuContent a:hover {
+        color: #ffc;
+      }
+      </style>
+      
+      <script>
+      function toggleMenu() {
+        const menu = document.getElementById('menuContent');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = 'none';
+        }
+      }
+      </script>
+      
+    <!-- Main Content Section -->
+    <section class="content">
+        <!-- Path Lore Section -->
+        <div class="lore-section" id="">
+            <h3>Disclaimer</h3>
+            <h4> 
+                The information provided by Godthrone is for general story-based informational purposes only and may experience drastic changes. The following content may contain sensitive themes that are not suitable for all audiences. Please be aware of what you are about to view and what you may see. You have been warned. </h4>
+                <br>
+            <p class="lore-text">
+                <strong>Lore:</strong><br>
+                In games, fantasy stories, or mythologies, "lore" refers to the background story, history, and information about characters, worlds, and events that shape the setting. Lore explains the origins, motivations, powers, and relationships within the fictional universe, giving depth and context to its elements. It’s like the hidden foundation of the world, revealing why things are the way they are and adding layers to the characters and their actions. For example, in a battle arena game, lore could include the origins of each warrior, the history of their powers, their alliances, and what drives them. It could tell stories of ancient conflicts, legendary creatures, or mythical realms, enhancing the player's experience by providing a rich narrative backdrop for the gameplay.</p><br>
+                <strong>Alignment:</strong><br>
+                In fantasy games, stories, and role-playing games, "alignments" define the moral and ethical perspective of a character, guiding how they make decisions and interact with the world. Alignments combine two aspects: morality (good, neutral, evil) and ethics (lawful, neutral, chaotic). Together, these create a nine-part alignment grid that helps players and readers understand a character's values, motives, and potential behavior.</p>
+                <br>
+                <div class="stat-section" id="">
+                    <h3>The Mythos of Godthrone</h3>
+                    <div class="container">
+                        <!-- <div class="text-1"> -->
+                            <!-- <div class="text-content"> -->
+                                <img src="images/godthrone.png" alt="map" width="200px" height="200px">
+                                <div class="text-details">
+                                    <h3>Godthrone is the source of all existence, the embodiment of the Life. The One True Consciousness, and Everything.</h3>
+                                    <p>It is a consciousness beyond comprehension.</p>
+                                    <p>A being both omnipotent and omnipresent, weaving reality itself with a single glare.</p>
+                                    <p>In its vast omniscience, Godthrone created consciousness.</p>
+                                    <p>Dreams within dreams, and the infinite potential of existence.</p>
+                                    <p>Despite being absolute, Godthrone exists in a paradoxical state—both mindless and supremely aware.</p>
+                                    <p>the cornerstone of creation in this setting.</p>
+                                    <h3></h3>
+                                    <p></p>
+                                    <h3></h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>The Divine Lineage</h3>
+                        <h4>Lore of Pure Bloods</h4>
+                        <h3>The Purebloods: First Children of Godthrone</h3>
+                        <p>The Purebloods were the first beings to awaken from Godthrone's creation, directly forged from its divine essence. They are considered the rightful heirs of Godthrone’s omnipotence, carrying the unfiltered power and purity of their creator. Longing for the affection of their "Father," the Purebloods sought to emulate Godthrone’s creative act and, in turn, birthed their own progeny.</p>
+                        <br>
+                                <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+        <div class="stat-section" id="">
+            <h3>Pure Bloods</h3>
+            <p>Click the icon for more info:</p>
+            <div class="container">
+                <div class="text-1">
+                    <div class="text-content">
+                        <a href="CharacterSheet/PureBloods/Zizius/zizius.html">
+                            <img src="images/purebloods1.png" alt="">
+                          </a>                          
+                        <div class="text-details">
+                            <h3>Zizius</h3>
+                            <p>Order and Authority</p>
+                            <h5>"The unyielding law of existence bends to my will; chaos shall kneel before my decree."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/purebloods2.png" alt="">
+                        <div class="text-details">
+                            <h3>Kiana</h3>
+                            <p>Creation and Renewal</p>
+                            <h5>"From the ashes of the old, I craft the new; life and death are threads in my tapestry."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/purebloods3.png" alt="">
+                        <div class="text-details">
+                            <h3>Aien</h3>
+                            <p>Chaos and Change</p>
+                            <h5>"I am the storm that shatters foundations; only through destruction can creation thrive."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/purebloods4.png" alt="">
+                        <div class="text-details">
+                            <h3>Xezphine</h3>
+                            <p>Knowledge and Mystery</p>
+                            <h5>"Truth lies veiled in shadows; seek me, and you may find enlightenment—or oblivion."</h5>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="stat-section" id="">
+            <h3>Dark and Mysterious Schools of Pure Bloods</h3>
+            <div class="container">
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/planecore.png" alt="">
+                        <div class="text-details">
+                            <h3>Terra Umbra</h3>
+                            <p>Abyssal Forge of Oblivion</p>
+                            <h5>"From the depths, we shape eternity."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/planecore2.png" alt="">
+                        <div class="text-details">
+                            <h3>Ignis Maledictum</h3>
+                            <p>Infernal Crucible of Ash</p>
+                            <h5>"In fire, we are reborn; in ash, we shall reign."</h>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/planecore3.png" alt="">
+                        <div class="text-details">
+                            <h3>Hydris Nox</h3>
+                            <p>Abyss of the Drowned Moon</p>
+                            <h5>"Through the tides, we consume all."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/planecore4.png" alt="">
+                        <div class="text-details">
+                            <h3>Zephyra Obscura</h3>
+                            <p>Tempest Citadel of Shadows</p>
+                            <h5>"In the void of air, chaos finds its throne."</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <br>
+                        <h4>Lore of Space Gods</h4>
+                        <h3>The Space Gods: The Children of the Purebloods</h3>
+                        <p>From the Purebloods came the Space Gods, celestial beings of immense power who inherited the essence of their creators. Though revered, they are not without flaws. Some Space Gods were compassionate, guiding and nurturing the worlds and their inhabitants, while others, blinded by pride, enslaved the Mere—a term used to describe the mortal races, viewed as lesser by many of the Space Gods.</p>
+                        <br>
+                                <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+        <div class="stat-section" id="">
+            <h3>Space Gods</h3>
+            <div class="container">
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/spacegod1.png" alt="">
+                        <div class="text-details">
+                            <h3>Sicuris</h3>
+                            <p>Dominion and Suppression</p>
+                            <h5>"Kneel, for freedom is a myth; under my will, the cosmos finds order."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/spacegod2.png" alt="">
+                        <div class="text-details">
+                            <h3>Zidis</h3>
+                            <p>Tyranny and Vanity</p>
+                            <h5>"The universe reflects my perfection; all who deny it shall be erased."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/spacegod3.png" alt="">
+                        <div class="text-details">
+                            <h3>Uxmes</h3>
+                            <p>Obsession and Manipulation</p>
+                            <h5>"Every choice you make is mine; I pull the strings, and you dance."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/spacegod4.png" alt="">
+                        <div class="text-details">
+                            <h3>Sinir</h3>
+                            <p>Annihilation and Despair</p>
+                            <h5>"In my shadow, hope perishes; existence ends where I begin."</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <br>
+                        <h4>Lore of Outer Gods</h4>
+                        <h3>The Outer Gods: Second Children of Godthrone</h3>
+                        <p>Parallel to the Purebloods, the Outer Gods arose as the second direct children of Godthrone. Unlike the Space Gods, they embodied the chaotic, primal forces of existence, giving rise to the Primordials, beings that govern raw, untamed aspects of reality. The Outer Gods are enigmatic, feared even by their siblings, as their nature often conflicts with order and stability.</p>
+                        <br>
+                                <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+        <div class="stat-section" id="">
+            <h3>Outer Gods</h3>
+            <div class="container">
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/outergods.png" alt="">
+                        <div class="text-details">
+                            <h3>Zosaius</h3>
+                            <p>Infinite Hunger and Void Consumption</p>
+                            <h5>"All that exists will be devoured; I am the maw that ends creation."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/outergods2.png" alt="">
+                        <div class="text-details">
+                            <h3>Zila</h3>
+                            <p>Madness and Twisted Perception</p>
+                            <h5>"See through my eyes, and let sanity become your sweetest lie."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/outergods4.png" alt="">
+                        <div class="text-details">
+                            <h3>Cureus</h3>
+                            <p>Pestilence and Biological Horror</p>
+                            <h5>"Life festers under my shadow; every breath is a curse waiting to bloom."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/outergods3.png" alt="">
+                        <div class="text-details">
+                            <h3>Csizsi</h3>
+                            <p>Silent Terror and Cosmic Isolation</p>
+                            <h5>"In the quiet of eternity, I will unravel you thread by thread."</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <br>
+                        <h4>Lore of Mere</h4>
+                        <h3>The Mere: Third Children of Godthrone</h3>
+                        <p>The Mere were the third creation of Godthrone, born of consciousness itself. They are diverse, encompassing all mortal races and species, from animals to machines. While often seen as inferior by the Space Gods, the Mere possess an unparalleled potential for growth and transformation. Starting weak, they can ascend to godhood through their actions, faith, and the development of their innate gifts.</p>
+                        <br>
+                                <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+        <div class="stat-section" id="">
+            <h3>Mere</h3>
+            <div class="container">
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/mere.png" alt="">
+                        <div class="text-details">
+                            <h3>King Zeref</h3>
+                            <p>The Benevolent Tyrant</p>
+                            <h5>"Mercy is my mask; beneath it lies a kingdom forged in chains."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/mere1.png" alt="">
+                        <div class="text-details">
+                            <h3>Princess Siara</h3>
+                            <p>The Enigma of Beauty and Darkness</p>
+                            <h5>"Adore me, fear me; your devotion feeds my abyss."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/mere2.png" alt="">
+                        <div class="text-details">
+                            <h3>Queen Toxara</h3>
+                            <p>The Spider Queen</p>
+                            <h5>"In my web, your struggles amuse me; your demise sustains me."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="images/mere3.png" alt="">
+                        <div class="text-details">
+                            <h3>Lord Rivias</h3>
+                            <p>The Reaper of Nations</p>
+                            <h5>"Empires crumble at my gaze, their ashes fuel my ascension."</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h4>Lore of Consciousness</h4>
+        <h3>Consciousness and Potential</h3>
+        <p>Godthrone ensured that every being, whether awakened or born, held the potential to wield divine powers. Consciousness is the key—any being capable of thought can ascend beyond their origins. While the starting point may vary, all can achieve greatness:</p>
+        <br>
+        <ul>
+            <li>Mere: Begin weaker than the other children but possess vast untapped potential.</li>
+            <br>
+            <li>Noble Bloods: Exceptional individuals among the Mere who naturally excel, though even non-Noble Bloods can achieve greatness.</li>
+            <br>
+            <li>Animals and Machines: As long as consciousness exists, even non-traditional beings can ascend to godhood.</li>
+                
+            </div>
+        </ul>
+        
+        <p>The world itself reflects this hierarchy, with beings rising through faith, mastery of magic, and self-determination. Mere often create their own religions, channeling collective belief into tangible power, further accelerating their ascension.</p>
+        <br>
+     
+
+<h4>Lore of the Continent</h4>
+                        <h3>The Godthrone Continent and Elemental Planes</h3>
+                        <p>The collective consciousness of all beings gave rise to the Godthrone Continent, the central hub of existence. This mythical landmass fractured into the Elemental Planes, each embodying a fundamental aspect of creation:</p>
+                        <br>
+                        <ul>
+                            <li>Material Plane: Where nearly all mortals reside, blending the elemental forces.</li>
+                            <br>
+                            <li>Feywild and Shadowfell: Mirrors of the Material Plane, offering wonder and despair.</li>
+                            <br>
+                            <li>Inner Planes: The raw elemental forces of Earth, Fire, Water, and Air.</li>
+                            <br>
+                            <li>Between Planes: Realms of transition, including Ash, Ice, Magma, and Ooze.</li>
+                            <br>
+                            <li>Ethereal Plane: A realm of observation, where the boundaries between planes blur.</li>
+                            <br>
+                            <li>Astral Plane: The nexus of life and death, where souls travel and the cycle of existence is maintained.</li>
+                        </ul>
+                        <br>
+                              
+
+
+        <h4>Lore of Aging and Death</h4>
+                        <h3>Life, Death, and Ascension</h3>
+                        <p>Aging and death are fluid concepts within this reality. All beings are inherently long-lived, their lifespans dictated more by circumstance than biology. The cycle of life and death ties deeply into the Astral Plane, where souls are reborn, ascend to higher forms, or are guided to their final rest.
+                            <br><br>
+                        Through mastery of magic, faith, and willpower, the Mere can transcend their mortal origins. Many seek godhood, using the collective faith of others to bolster their power. The journey of a Mere to divinity often involves trials of growth, self-discovery, and the unification of their innate potential with divine blessings.</p>
+                        <br>
+                                <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+        
+
+
+        <h4>Lore of Relationships</h4>
+                        <h3>Complex Relationships</h3>
+                        <p>Not all Space Gods enslave the Mere; many have compassion for these mortal beings, guiding them or forming alliances. Conversely, some Outer Gods despise the Primordials born of them and seek to eradicate their creations. Interactions between these divine hierarchies are fraught with tension, rivalry, and occasional unity against greater threats.
+                            <br><br>
+                        Even among the Purebloods, anomalies arise. There are tales of a Pureblood birthing an Outer God—an act that defied natural order and resulted in a weakened, outcast entity. Such exceptions highlight the unpredictable nature of Godthrone’s creation.</p>
+                        <br>
+                                <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+       
+
+        <h4>Lore of Potentials</h4>
+                        <h3>The Endless Potential</h3>
+                        <p>In this universe, consciousness is the great equalizer. It grants all beings, regardless of origin, the ability to grow, change, and transcend. The world of Godthrone is a tapestry of power, ambition, and mystery, where mortals can become gods, gods can fall, and the ultimate truths of existence remain tantalizingly out of reach.
+                            <br><br>
+                        Here, in the shadow of Godthrone’s omnipotence, every being is a thread in the cosmic weave, striving to leave their mark on the infinite expanse of creation.</p>
+                        <br>
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+// Show button with full opacity when scrolling
+window.onscroll = function() {
+    const button = document.getElementById("scrollToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.classList.add("show");
+    } else {
+        button.classList.remove("show");
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+<style>
+    .scroll-to-top {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        background-color: #da4a6c !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 50% !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+        cursor: pointer !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+        transition: all 0.3s ease !important;
+        z-index: 9999 !important;
+        opacity: 0.5 !important;
+        display: block !important;
+    }
+    
+    .scroll-to-top:hover {
+        opacity: 1 !important;
+        transform: scale(1.1) !important;
+    }
+    </style>
+    <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Optimized Lore Page</title>
+    <style>
+        /* Mobile Optimizations */
+        
+        /* Mobile phones (up to 767px) */
+        @media (max-width: 767px) {
+            body {
+                padding: 0;
+                -webkit-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+            .header {
+                padding: 15px 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.5em;
+                margin-bottom: 8px;
+            }
+            
+            .header p {
+                font-size: 1em;
+            }
+            
+            .content {
+                margin: 10px auto;
+                padding: 15px;
+            }
+            
+            .lore-section h3, 
+            .stat-section h3, 
+            .alignment-section h3 {
+                font-size: 1.4em;
+                margin-bottom: 12px;
+            }
+            
+            .lore-text, 
+            .alignment-section p, 
+            .stat-section p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            
+            .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .text-1 {
+                flex: 1 1 100%;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .text-content img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 12px;
+            }
+            
+            .text-details h3 {
+                font-size: 1.1em;
+                margin-bottom: 8px;
+            }
+            
+            .text-details p {
+                font-size: 0.85em;
+                line-height: 1.4;
+            }
+            
+            .alignment-section .container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .alignment-section .text-1 {
+                padding: 12px;
+            }
+            
+            .alignment-section .text-content h3 {
+                font-size: 1.2em;
+                margin-bottom: 6px;
+            }
+            
+            .alignment-section .text-content p {
+                font-size: 0.85em;
+            }
+        }
+        
+        /* Small mobile phones (up to 480px) */
+        @media (max-width: 480px) {
+            .header {
+                padding: 12px 8px;
+            }
+            
+            .header h2 {
+                font-size: 1.3em;
+            }
+            
+            .header p {
+                font-size: 0.9em;
+            }
+            
+            .content {
+                padding: 12px;
+            }
+            
+            .lore-section h3, 
+            .stat-section h3, 
+            .alignment-section h3 {
+                font-size: 1.2em;
+            }
+            
+            .text-1 {
+                padding: 12px;
+            }
+            
+            .text-content img {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .text-details h3 {
+                font-size: 1em;
+            }
+            
+            .text-details p {
+                font-size: 0.8em;
+            }
+        }
+        
+        /* Tablets (768px to 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                gap: 18px;
+            }
+            
+            .text-1 {
+                flex: 1 1 calc(50% - 18px);
+            }
+            
+            .alignment-section .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Touch-friendly improvements for all mobile devices */
+        @media (max-width: 1023px) {
+            /* Make all clickable elements touch-friendly */
+            a, button {
+                min-height: 44px;
+                min-width: 44px;
+                -webkit-tap-highlight-color: transparent;
+                touch-action: manipulation;
+            }
+            
+            /* Improve text selection */
+            .text-1 {
+                -webkit-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+                user-select: text;
+            }
+            
+            /* Better hover effects for touch devices */
+            .text-1:hover {
+                transform: none;
+            }
+            
+            .text-1:active {
+                transform: scale(0.98);
+                transition: transform 0.1s;
+            }
+        }
+        
+        /* Landscape orientation adjustments */
+        @media (orientation: landscape) and (max-height: 500px) {
+            .header {
+                padding: 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.4em;
+                margin-bottom: 5px;
+            }
+            
+            .content {
+                padding: 10px;
+            }
+        }
+        
+        /* Remove horizontal scrollbar */
+        @media (max-width: 1023px) {
+            html, body {
+                overflow-x: hidden;
+            }
+            
+            * {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+</html>
+</body>
+</html>

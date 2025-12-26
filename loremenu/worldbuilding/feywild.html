@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone’s Lore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="">
+        <h2>Godthrone’s Lore</h2>
+    </header>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../lore.html">Lore</a>
+          <a href="../../Protagonist/protagonist.html">Protagonist</a>
+          <a href="../../Story/world.html">Story</a>
+        </div>
+      </div>
+      
+      <style>
+      .menu-panel {
+        position: fixed;
+        top: 20px;     /* distance from top */
+        right: 20px;   /* distance from right */
+        z-index: 9999;
+        text-align: right;
+      }
+      
+      /* Button styling */
+      .menu-toggle {
+        background: linear-gradient(45deg, #da4a6c, #ff6b9d);
+        border: none;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      /* Menu content */
+      #menuContent {
+        display: none; /* hidden initially */
+        margin-top: 8px;
+        background: rgba(0,0,0,0.8);
+        border-radius: 8px;
+        border: 2px solid #da4a6c;
+        text-align: right; /* aligns links to right */
+      }
+      
+      /* Links inside menu */
+      #menuContent a {
+        display: block;
+        color: #ff6b9d;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+      
+      #menuContent a:hover {
+        color: #ffc;
+      }
+      </style>
+      
+      <script>
+      function toggleMenu() {
+        const menu = document.getElementById('menuContent');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = 'none';
+        }
+      }
+      </script>
+      
+    <!-- Main Content Section -->
+    <section class="content">
+        <!-- Path Lore Section -->
+        <div class="lore-section" id="">
+            <h3>Godthrone Continent</h3>
+            <p class="lore-text">
+                <strong>A mythical landmass blessed by the gods:</strong><br>
+                The Godthrone Continent is a massive landmass, completely detached from the rest of the world, governed by bizarre rules and unique physics. Each region within the continent is distinct, with no two areas alike. The connection between the planes can best be described as a giant wheel, with the Material Plane resting at its center. As one ventures further from the center, they encounter planes that embody the fundamental aspects of the physical world.</p>
+
+                <div class="stat-section" id="">
+                    <br>
+                    <h3>Feywild</h3>
+                    <div class="container">
+
+                            </div>
+                        </div>
+                        <h4>Lore of Feywild</h4>
+                        <h3>Fields of Mystery and Undiscovered Splendor</h3>
+                        <p>The Feywild is a realm of enchantment, where reality bends to the whims of magic and the boundaries of imagination blur. It is a vibrant, untamed mirror of the Material Plane, filled with wonder, peril, and ceaseless change. Here, the mundane becomes extraordinary, and the extraordinary is commonplace.</p>
+                        <br>
+                        <h4>A World of Endless Beauty</h4>
+                        <p>The Feywild is a land of surreal and exaggerated beauty. Rolling meadows shimmer with hues unknown to mortal eyes, forests stretch infinitely skyward, and rivers flow with liquid light. The sun and moon often share the sky, casting everything in an ethereal glow. Seasons may shift in the span of a single day, and time itself flows unpredictably, with days feeling like moments and centuries passing in the blink of an eye.
+                            <br><br>
+                            Each corner of the Feywild reflects the heart of its wild magic. There are tranquil groves where the air hums with soothing melodies, and there are dark, twisted thickets where shadows dance with a life of their own.</p>
+                        <br>
+                        <h4>The Play of Magic</h4>
+                        <p>Magic is the lifeblood of the Feywild, weaving itself into the fabric of every blade of grass and gust of wind. This raw, untamed magic creates a world where the impossible is not only possible but inevitable. A simple wish may conjure a feast, while a careless step might summon a storm.
+                            <br><br>
+                            The creatures of the Feywild—pixies, dryads, satyrs, and the like—are intrinsically tied to this magic. They embody the chaotic, capricious, and vibrant energy of the plane. Even the plants and animals are enchanted, with trees that whisper secrets and beasts that glow with inner light.</p>
+                        <br>
+                        <h4>A Land of Duality</h4>
+                        <p>Beneath its breathtaking beauty lies a darker truth: the Feywild is as perilous as it is wondrous. Its magic is fickle, its inhabitants capricious, and its rules alien to mortal understanding. Deals made with fey beings often come with unintended consequences, and the unprepared traveler may find themselves hopelessly lost in a land where the very paths shift and rearrange.
+                            <br><br>
+                            The Feywild’s duality is embodied in its rulers, the Archfey. These immensely powerful beings are as beautiful as they are dangerous, embodying extremes of emotion, desire, and temperament. Their courts—the Seelie and Unseelie—represent the lighter and darker aspects of fey nature, though neither can be fully trusted.</p>
+                        <br>
+                        <h4>A Realm of Infinite Possibility</h4>
+                        <p>The Feywild is not bound by the same constraints as the Material Plane. Time, distance, and causality are fluid, making exploration an exercise in unpredictability. A wanderer might find themselves in a meadow of singing flowers, only to step through a veil of mist and emerge in a frozen tundra lit by an aurora of shifting colors.
+                            <br><br>
+                            The realm's unpredictability extends to its denizens, who are often motivated by whims, games, and a love of mischief. Their actions, while seemingly harmless, can have profound and unexpected consequences for those who encounter them.
+                            </p>
+                        <br>
+                        <h4>Secrets and Splendor</h4>
+                        <p>Legends speak of ancient relics hidden within the Feywild, artifacts of immeasurable power tied to its primal magic. Guardians of these treasures are said to be as enchanting as the items themselves, their beauty hiding cunning and danger. Adventurers who seek these treasures must tread carefully, for the Feywild does not easily relinquish its secrets.
+                            <br><br>
+                            The Feywild's true splendor lies not just in its magic or beauty but in its infinite potential. It is a place where the boundaries of reality are rewritten and where the boldest dreams—or nightmares—come to life.</p>
+                        <br>
+                        <h4>The Living Dream</h4>
+                        <p>To enter the Feywild is to step into a dream that you may never wish to leave. Its fields of mystery and undiscovered splendor captivate the soul, but its enchantments demand respect. It is a realm where joy and peril are two sides of the same coin, and every step is an invitation to marvel—or to fall.
+                            <br><br>
+                            The Feywild is not just a plane; it is a living, breathing story, ever-changing and endlessly captivating, where even the smallest encounter can alter destinies and the most fleeting moment can last forever.</p>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+// Show button with full opacity when scrolling
+window.onscroll = function() {
+    const button = document.getElementById("scrollToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.classList.add("show");
+    } else {
+        button.classList.remove("show");
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+<style>
+    .scroll-to-top {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        background-color: #da4a6c !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 50% !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+        cursor: pointer !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+        transition: all 0.3s ease !important;
+        z-index: 9999 !important;
+        opacity: 0.5 !important;
+        display: block !important;
+    }
+    
+    .scroll-to-top:hover {
+        opacity: 1 !important;
+        transform: scale(1.1) !important;
+    }
+    </style>
+    <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Optimized Lore Page</title>
+    <style>
+        /* Mobile Optimizations */
+        
+        /* Mobile phones (up to 767px) */
+        @media (max-width: 767px) {
+            body {
+                padding: 0;
+                -webkit-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+            .header {
+                padding: 15px 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.5em;
+                margin-bottom: 8px;
+            }
+            
+            .header p {
+                font-size: 1em;
+            }
+            
+            .content {
+                margin: 10px auto;
+                padding: 15px;
+            }
+            
+            .lore-section h3, 
+            .stat-section h3, 
+            .alignment-section h3 {
+                font-size: 1.4em;
+                margin-bottom: 12px;
+            }
+            
+            .lore-text, 
+            .alignment-section p, 
+            .stat-section p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            
+            .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .text-1 {
+                flex: 1 1 100%;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .text-content img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 12px;
+            }
+            
+            .text-details h3 {
+                font-size: 1.1em;
+                margin-bottom: 8px;
+            }
+            
+            .text-details p {
+                font-size: 0.85em;
+                line-height: 1.4;
+            }
+            
+            .alignment-section .container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .alignment-section .text-1 {
+                padding: 12px;
+            }
+            
+            .alignment-section .text-content h3 {
+                font-size: 1.2em;
+                margin-bottom: 6px;
+            }
+            
+            .alignment-section .text-content p {
+                font-size: 0.85em;
+            }
+        }
+        
+        /* Small mobile phones (up to 480px) */
+        @media (max-width: 480px) {
+            .header {
+                padding: 12px 8px;
+            }
+            
+            .header h2 {
+                font-size: 1.3em;
+            }
+            
+            .header p {
+                font-size: 0.9em;
+            }
+            
+            .content {
+                padding: 12px;
+            }
+            
+            .lore-section h3, 
+            .stat-section h3, 
+            .alignment-section h3 {
+                font-size: 1.2em;
+            }
+            
+            .text-1 {
+                padding: 12px;
+            }
+            
+            .text-content img {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .text-details h3 {
+                font-size: 1em;
+            }
+            
+            .text-details p {
+                font-size: 0.8em;
+            }
+        }
+        
+        /* Tablets (768px to 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                gap: 18px;
+            }
+            
+            .text-1 {
+                flex: 1 1 calc(50% - 18px);
+            }
+            
+            .alignment-section .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Touch-friendly improvements for all mobile devices */
+        @media (max-width: 1023px) {
+            /* Make all clickable elements touch-friendly */
+            a, button {
+                min-height: 44px;
+                min-width: 44px;
+                -webkit-tap-highlight-color: transparent;
+                touch-action: manipulation;
+            }
+            
+            /* Improve text selection */
+            .text-1 {
+                -webkit-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+                user-select: text;
+            }
+            
+            /* Better hover effects for touch devices */
+            .text-1:hover {
+                transform: none;
+            }
+            
+            .text-1:active {
+                transform: scale(0.98);
+                transition: transform 0.1s;
+            }
+        }
+        
+        /* Landscape orientation adjustments */
+        @media (orientation: landscape) and (max-height: 500px) {
+            .header {
+                padding: 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.4em;
+                margin-bottom: 5px;
+            }
+            
+            .content {
+                padding: 10px;
+            }
+        }
+        
+        /* Remove horizontal scrollbar */
+        @media (max-width: 1023px) {
+            html, body {
+                overflow-x: hidden;
+            }
+            
+            * {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+</html>
+</body>
+</html>

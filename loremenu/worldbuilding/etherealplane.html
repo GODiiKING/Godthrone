@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone’s Lore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="">
+        <h2>Godthrone’s Lore</h2>
+    </header>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../lore.html">Lore</a>
+          <a href="../../Protagonist/protagonist.html">Protagonist</a>
+          <a href="../../Story/world.html">Story</a>
+        </div>
+      </div>
+      
+      <style>
+      .menu-panel {
+        position: fixed;
+        top: 20px;     /* distance from top */
+        right: 20px;   /* distance from right */
+        z-index: 9999;
+        text-align: right;
+      }
+      
+      /* Button styling */
+      .menu-toggle {
+        background: linear-gradient(45deg, #da4a6c, #ff6b9d);
+        border: none;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      /* Menu content */
+      #menuContent {
+        display: none; /* hidden initially */
+        margin-top: 8px;
+        background: rgba(0,0,0,0.8);
+        border-radius: 8px;
+        border: 2px solid #da4a6c;
+        text-align: right; /* aligns links to right */
+      }
+      
+      /* Links inside menu */
+      #menuContent a {
+        display: block;
+        color: #ff6b9d;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+      
+      #menuContent a:hover {
+        color: #ffc;
+      }
+      </style>
+      
+      <script>
+      function toggleMenu() {
+        const menu = document.getElementById('menuContent');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = 'none';
+        }
+      }
+      </script>
+      
+    <!-- Main Content Section -->
+    <section class="content">
+        <!-- Path Lore Section -->
+        <div class="lore-section" id="">
+
+
+
+    <!-- Main Content Section -->
+    <section class="content">
+        <!-- Path Lore Section -->
+        <div class="lore-section" id="">
+            <h3>Godthrone Continent</h3>
+            <p class="lore-text">
+                <strong>A mythical landmass blessed by the gods:</strong><br>
+                The Godthrone Continent is a massive landmass, completely detached from the rest of the world, governed by bizarre rules and unique physics. Each region within the continent is distinct, with no two areas alike. The connection between the planes can best be described as a giant wheel, with the Material Plane resting at its center. As one ventures further from the center, they encounter planes that embody the fundamental aspects of the physical world.</p>
+
+                <div class="stat-section" id="">
+                    <br>
+                    <h3>Ethereal Plane</h3>
+                    <div class="container">
+                            </div>
+                        </div>
+                        <h4>Lore of Ethereal Plane</h4>
+                        <h3>Observe the World Around</h3>
+                        <p>The Ethereal Plane is a ghostly reflection of the Material Plane, a realm of intangible whispers and drifting shadows. It exists alongside the physical world, like a translucent veil that overlays reality, allowing those within it to observe but rarely interact with the realms they parallel. Here, the boundaries between existence and nothingness blur, creating a hauntingly serene and enigmatic domain.</p>
+                        <br>
+                        <h4>A World of Shadows and Mists</h4>
+                        <p>The Ethereal Plane is a landscape of muted colors and silvery mists, where every structure and being in the Material Plane appears as a faint, glowing outline. Time flows as it does in the physical world, but sound is muffled, and touch is absent. Travelers find themselves floating weightlessly, unbound by the constraints of gravity, as they move through this ghostly domain.</p>
+                        <br>
+                        <h4>Layers of Reality</h4>
+                        <p>The Ethereal Plane is divided into two distinct regions:</p>
+                        <br>
+                        <ul>
+                            <li>The Border Ethereal: This layer is closest to the Material Plane, allowing beings to view and traverse its mirrored landscape. It is here that ghostly figures and lost spirits often linger, tethered to unfinished business.</li>
+                            <br>
+                            <li>The Deep Ethereal: A vast, formless expanse beyond the Border Ethereal, filled with swirling mists and mysterious currents of raw potential. This is a realm of dreams, where reality begins to dissolve, and the possibilities of creation and imagination take root.</li>
+                        </ul>
+                        <br>
+                        <h4>Inhabitants of the Ethereal</h4>
+                        <p>While the Ethereal Plane appears tranquil, it is not devoid of life or danger.</p>
+                        <br>
+                        <ul>
+                            <li>Ghosts and Spirits: The most common inhabitants, lingering echoes of those who have passed but remain tethered to the Material Plane.</li>
+                            <br>
+                            <li>Phase Beasts: Predatory creatures that shift between the Ethereal and Material Planes to hunt.</li>
+                            <br>
+                            <li>Ethereal Observers: Beings of pure thought and energy, often invisible to all but the most perceptive.</li>
+                            <br>
+                            <li>Ethereal Marauders: Predatory entities that roam the plane, feeding on emotions and the essence of travelers.</li>
+                        </ul>
+                        <br>
+                        <h4>Role and Significance</h4>
+                        <p>The Ethereal Plane serves as a bridge between worlds, allowing passage to hidden places or planes otherwise inaccessible. It is also a refuge for the unseen and the unnoticed—a space where lost souls and forgotten memories linger. Sages, seers, and spiritualists often study this plane to glimpse into the unseen fabric of reality or connect with the departed.
+                        </p>
+                        <br>
+                        <h4>Connection to the Material Plane</h4>
+                        <p>Portals to the Ethereal Plane are rare but can occur through rituals, magical artifacts, or certain natural phenomena. Areas of intense emotion or spiritual energy may also create temporary breaches. For those on the Material Plane, the presence of an Ethereal traveler is often felt as an unexplained chill or a faint shimmer in the air.</p>
+                        <br>
+                        <h4>Challenges of the Ethereal</h4>
+                        <p>While the Ethereal Plane offers safety from most physical dangers, it presents unique challenges. Navigation is disorienting due to the lack of landmarks, and the ever-present mists can cloud judgment and perception. Furthermore, its inhabitants can pose a threat to the unwary, particularly the predatory creatures that lurk in its depths.</p>
+                        <br>
+                        <h4>A Realm of Reflection</h4>
+                        <p>The Ethereal Plane is a world of paradox: serene yet unsettling, empty yet full of echoes. It is a place of observation and introspection, where travelers can witness the world without being seen, or reflect upon the nature of reality itself. Those who venture into the Ethereal Plane must tread carefully, for while it is a realm of subtle beauty, it is also one of hidden perils and profound mystery.</p>
+        </div>
+
+        <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+        <div class="stat-section" id="">
+            <h3></h3>
+            <div class="container">
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="img/lore/etherealheaven.png" alt="">
+                        <div class="text-details">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="img/lore/etherealheaven2.png" alt="">
+                        <div class="text-details">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="img/lore/etherealheaven3.png" alt="">
+                        <div class="text-details">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="img/lore/etherealheaven4.png" alt="">
+                        <div class="text-details">
+                            <h3></h3>
+                            <p</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+    <script src="script.js"></script>
+
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+// Show button with full opacity when scrolling
+window.onscroll = function() {
+    const button = document.getElementById("scrollToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.classList.add("show");
+    } else {
+        button.classList.remove("show");
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+<style>
+    .scroll-to-top {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        background-color: #da4a6c !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 50% !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+        cursor: pointer !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+        transition: all 0.3s ease !important;
+        z-index: 9999 !important;
+        opacity: 0.5 !important;
+        display: block !important;
+    }
+    
+    .scroll-to-top:hover {
+        opacity: 1 !important;
+        transform: scale(1.1) !important;
+    }
+    </style>
+    <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Optimized Lore Page</title>
+    <style>
+        /* Mobile Optimizations */
+        
+        /* Mobile phones (up to 767px) */
+        @media (max-width: 767px) {
+            body {
+                padding: 0;
+                -webkit-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+            .header {
+                padding: 15px 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.5em;
+                margin-bottom: 8px;
+            }
+            
+            .header p {
+                font-size: 1em;
+            }
+            
+            .content {
+                margin: 10px auto;
+                padding: 15px;
+            }
+            
+            .lore-section h3, 
+            .stat-section h3, 
+            .alignment-section h3 {
+                font-size: 1.4em;
+                margin-bottom: 12px;
+            }
+            
+            .lore-text, 
+            .alignment-section p, 
+            .stat-section p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            
+            .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .text-1 {
+                flex: 1 1 100%;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .text-content img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 12px;
+            }
+            
+            .text-details h3 {
+                font-size: 1.1em;
+                margin-bottom: 8px;
+            }
+            
+            .text-details p {
+                font-size: 0.85em;
+                line-height: 1.4;
+            }
+            
+            .alignment-section .container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .alignment-section .text-1 {
+                padding: 12px;
+            }
+            
+            .alignment-section .text-content h3 {
+                font-size: 1.2em;
+                margin-bottom: 6px;
+            }
+            
+            .alignment-section .text-content p {
+                font-size: 0.85em;
+            }
+        }
+        
+        /* Small mobile phones (up to 480px) */
+        @media (max-width: 480px) {
+            .header {
+                padding: 12px 8px;
+            }
+            
+            .header h2 {
+                font-size: 1.3em;
+            }
+            
+            .header p {
+                font-size: 0.9em;
+            }
+            
+            .content {
+                padding: 12px;
+            }
+            
+            .lore-section h3, 
+            .stat-section h3, 
+            .alignment-section h3 {
+                font-size: 1.2em;
+            }
+            
+            .text-1 {
+                padding: 12px;
+            }
+            
+            .text-content img {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .text-details h3 {
+                font-size: 1em;
+            }
+            
+            .text-details p {
+                font-size: 0.8em;
+            }
+        }
+        
+        /* Tablets (768px to 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                gap: 18px;
+            }
+            
+            .text-1 {
+                flex: 1 1 calc(50% - 18px);
+            }
+            
+            .alignment-section .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Touch-friendly improvements for all mobile devices */
+        @media (max-width: 1023px) {
+            /* Make all clickable elements touch-friendly */
+            a, button {
+                min-height: 44px;
+                min-width: 44px;
+                -webkit-tap-highlight-color: transparent;
+                touch-action: manipulation;
+            }
+            
+            /* Improve text selection */
+            .text-1 {
+                -webkit-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+                user-select: text;
+            }
+            
+            /* Better hover effects for touch devices */
+            .text-1:hover {
+                transform: none;
+            }
+            
+            .text-1:active {
+                transform: scale(0.98);
+                transition: transform 0.1s;
+            }
+        }
+        
+        /* Landscape orientation adjustments */
+        @media (orientation: landscape) and (max-height: 500px) {
+            .header {
+                padding: 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.4em;
+                margin-bottom: 5px;
+            }
+            
+            .content {
+                padding: 10px;
+            }
+        }
+        
+        /* Remove horizontal scrollbar */
+        @media (max-width: 1023px) {
+            html, body {
+                overflow-x: hidden;
+            }
+            
+            * {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+</html>
+</body>
+</html>

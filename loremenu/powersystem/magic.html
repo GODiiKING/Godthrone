@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone’s Lore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="">
+        <h2>Godthrone’s Lore</h2>
+    </header>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../lore.html">Lore</a>
+          <a href="../../Protagonist/protagonist.html">Protagonist</a>
+          <a href="../../Story/world.html">Story</a>
+        </div>
+      </div>
+      
+      <style>
+      .menu-panel {
+        position: fixed;
+        top: 20px;     /* distance from top */
+        right: 20px;   /* distance from right */
+        z-index: 9999;
+        text-align: right;
+      }
+      
+      /* Button styling */
+      .menu-toggle {
+        background: linear-gradient(45deg, #da4a6c, #ff6b9d);
+        border: none;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      /* Menu content */
+      #menuContent {
+        display: none; /* hidden initially */
+        margin-top: 8px;
+        background: rgba(0,0,0,0.8);
+        border-radius: 8px;
+        border: 2px solid #da4a6c;
+        text-align: right; /* aligns links to right */
+      }
+      
+      /* Links inside menu */
+      #menuContent a {
+        display: block;
+        color: #ff6b9d;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+      
+      #menuContent a:hover {
+        color: #ffc;
+      }
+      </style>
+      
+      <script>
+      function toggleMenu() {
+        const menu = document.getElementById('menuContent');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = 'none';
+        }
+      }
+      </script>
+      
+    <!-- Main Content Section -->
+    <section class="content">
+        <!-- Path Lore Section -->
+        <div class="lore-section" id="">
+
+
+        <!-- Strength, Speed, Stamina, Magic, Wisdom Section -->
+        <div class="stat-section" id="">
+            <h4>Lore of Magic</h4>
+            <h3>Magic</h3>
+            <p>Magic exists everywhere across the planes, except for the Ethereal Plane. It flows through commoners and royals alike, touching beings and even unnatural places. Being born with powerful magic can be a double-edged dagger—it can bestow great power upon the Material Plane or bring destruction upon its people, depending on the wielder's desires. From mastering the elements to uncovering unknown forms of magic, the possibilities are limitless.</p>
+            <br>
+            <div class="container">
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/timemagic.png" alt="timemagic">
+                        <div class="text-details">
+                            <h3>Time Magic</h3>
+                            <p></p>
+                            <h5>"The past is my canvas, the future my dominion; time bends to those who dare command it."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/lightmagic.png" alt="lightmagic">
+                        <div class="text-details">
+                            <h3>Light Magic</h3>
+                            <p></p>
+                            <h5>"In the brilliance of light, I conceal the shadows; even purity can be corrupted."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/airmagic.png" alt="airmagic">
+                        <div class="text-details">
+                            <h3>Air Magic</h3>
+                            <p></p>
+                            <h5>"I am the breath of the world, and in my winds, I carry destruction."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/poisonmagic.png" alt="poisonmagic">
+                        <div class="text-details">
+                            <h3>Poison Magic</h3>
+                            <p</p>
+                            <h5>"In every whisper of venom, a thousand lives unravel—no cure, no escape."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/naturemagic.png" alt="naturemagic">
+                        <div class="text-details">
+                            <h3>Nature Magic</h3>
+                            <p></p>
+                            <h5>"From the roots of the earth, I draw power; every living thing bends to my will—nature is both savior and executioner."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/icemagic.png" alt="icemagic">
+                        <div class="text-details">
+                            <h3>Ice Magic</h3>
+                            <p></p>
+                            <h5>"Frozen in time, unyielding as the void; cold is the only truth in this world."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/lightningmagic.png" alt="lightningmagic">
+                        <div class="text-details">
+                            <h3>Lightning Magic</h3>
+                            <p></p>
+                            <h5>"I am the fury of the storm, where the sky burns with my wrath and the earth trembles in fear."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/stormmagic.png" alt="stormmagic">
+                        <div class="text-details">
+                            <h3>Storm Magic</h3>
+                            <p></p>
+                            <h5>"From the chaos of the heavens, I summon the tempest; destruction is my herald."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/watermagic.png" alt="watermagic">
+                        <div class="text-details">
+                            <h3>Water Magic</h3>
+                            <p></p>
+                            <h5>"In the depths, I hold the power to drown worlds; even the purest currents carry destruction."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/spacemagic.png" alt="spacemagic">
+                        <div class="text-details">
+                            <h3>Space Magic</h3>
+                            <p></p>
+                            <h5>"Beyond the fabric of reality, I reign. The stars bow to my command, and the void is mine to shape."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/shadowmagic.png" alt="shadowmagic">
+                        <div class="text-details">
+                            <h3>Shadow Magic</h3>
+                            <p</p>
+                            <h5>"In the darkness, I am the architect; shadows whisper my name, and all light fades before me."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/lovemagic.png" alt="lovemagic">
+                        <div class="text-details">
+                            <h3>Love Magic</h3>
+                            <p></p>
+                            <h5>"Love is but a weapon, twisted and sharp; I bind hearts with chains forged from desire and despair."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/lifemagic.png" alt="lifemagic">
+                        <div class="text-details">
+                            <h3>Life Magic</h3>
+                            <p></p>
+                            <h5>"Life is but a fleeting illusion, easily manipulated and broken by my hand."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/firemagic.png" alt="firemagic">
+                        <div class="text-details">
+                            <h3>Fire Magic</h3>
+                            <p></p>
+                            <h5>"I am the eternal flame that consumes all; from ash, I rise, and through fire, I reign."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/plaguemagic.png" alt="plaguemagic">
+                        <div class="text-details">
+                            <h3>Plague Magic</h3>
+                            <p></p>
+                            <h5>"I am the sickness that rots the world from within; in my wake, only decay and death remain."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/bloodmagic.png" alt="bloodmagic">
+                        <div class="text-details">
+                            <h3>Blood Magic</h3>
+                            <p></p>
+                            <h5>"From the heart of the living, I draw my power; blood is the currency of the damned."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/earthmagic.png" alt="earthmagic">
+                        <div class="text-details">
+                            <h3>Earth Magic</h3>
+                            <p></p>
+                            <h5>"I am the earth’s will, unshakable and immovable; the world trembles beneath my command."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/metalmagic.png" alt="metalmagic">
+                        <div class="text-details">
+                            <h3>Metal Magic</h3>
+                            <p></p>
+                            <h5>"From ore and iron, I forge my destiny; the world is shaped by my will, as cold and unrelenting as steel."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/deathmagic.png" alt="deathmagic">
+                        <div class="text-details">
+                            <h3>Death Magic</h3>
+                            <p></p>
+                            <h5>"I command the realm of the departed; in death, there is no mercy, no salvation—only my reign."</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-1">
+                    <div class="text-content">
+                        <img src="image/chaosmagic.png" alt="chaosmagic">
+                        <div class="text-details">
+                            <h3>Chaos Magic</h3>
+                            <p></p>
+                            <h5>"From the broken pieces of existence, I shape reality; all things fall to madness in my wake."</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+        <br>
+
+
+
+
+    
+
+
+
+    <script src="script.js"></script>
+
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+// Show button with full opacity when scrolling
+window.onscroll = function() {
+    const button = document.getElementById("scrollToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        button.classList.add("show");
+    } else {
+        button.classList.remove("show");
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>
+<style>
+    .scroll-to-top {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        background-color: #da4a6c !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 50% !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+        cursor: pointer !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+        transition: all 0.3s ease !important;
+        z-index: 9999 !important;
+        opacity: 0.5 !important;
+        display: block !important;
+    }
+    
+    .scroll-to-top:hover {
+        opacity: 1 !important;
+        transform: scale(1.1) !important;
+    }
+    </style>
+    <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Optimized Lore Page</title>
+    <style>
+        /* Mobile Optimizations */
+        
+        /* Mobile phones (up to 767px) */
+        @media (max-width: 767px) {
+            body {
+                padding: 0;
+                -webkit-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+            .header {
+                padding: 15px 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.5em;
+                margin-bottom: 8px;
+            }
+            
+            .header p {
+                font-size: 1em;
+            }
+            
+            .content {
+                margin: 10px auto;
+                padding: 15px;
+            }
+            
+            .lore-section h3, 
+            .stat-section h3, 
+            .alignment-section h3 {
+                font-size: 1.4em;
+                margin-bottom: 12px;
+            }
+            
+            .lore-text, 
+            .alignment-section p, 
+            .stat-section p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            
+            .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .text-1 {
+                flex: 1 1 100%;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .text-content img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 12px;
+            }
+            
+            .text-details h3 {
+                font-size: 1.1em;
+                margin-bottom: 8px;
+            }
+            
+            .text-details p {
+                font-size: 0.85em;
+                line-height: 1.4;
+            }
+            
+            .alignment-section .container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .alignment-section .text-1 {
+                padding: 12px;
+            }
+            
+            .alignment-section .text-content h3 {
+                font-size: 1.2em;
+                margin-bottom: 6px;
+            }
+            
+            .alignment-section .text-content p {
+                font-size: 0.85em;
+            }
+        }
+        
+        /* Small mobile phones (up to 480px) */
+        @media (max-width: 480px) {
+            .header {
+                padding: 12px 8px;
+            }
+            
+            .header h2 {
+                font-size: 1.3em;
+            }
+            
+            .header p {
+                font-size: 0.9em;
+            }
+            
+            .content {
+                padding: 12px;
+            }
+            
+            .lore-section h3, 
+            .stat-section h3, 
+            .alignment-section h3 {
+                font-size: 1.2em;
+            }
+            
+            .text-1 {
+                padding: 12px;
+            }
+            
+            .text-content img {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .text-details h3 {
+                font-size: 1em;
+            }
+            
+            .text-details p {
+                font-size: 0.8em;
+            }
+        }
+        
+        /* Tablets (768px to 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                gap: 18px;
+            }
+            
+            .text-1 {
+                flex: 1 1 calc(50% - 18px);
+            }
+            
+            .alignment-section .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Touch-friendly improvements for all mobile devices */
+        @media (max-width: 1023px) {
+            /* Make all clickable elements touch-friendly */
+            a, button {
+                min-height: 44px;
+                min-width: 44px;
+                -webkit-tap-highlight-color: transparent;
+                touch-action: manipulation;
+            }
+            
+            /* Improve text selection */
+            .text-1 {
+                -webkit-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+                user-select: text;
+            }
+            
+            /* Better hover effects for touch devices */
+            .text-1:hover {
+                transform: none;
+            }
+            
+            .text-1:active {
+                transform: scale(0.98);
+                transition: transform 0.1s;
+            }
+        }
+        
+        /* Landscape orientation adjustments */
+        @media (orientation: landscape) and (max-height: 500px) {
+            .header {
+                padding: 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.4em;
+                margin-bottom: 5px;
+            }
+            
+            .content {
+                padding: 10px;
+            }
+        }
+        
+        /* Remove horizontal scrollbar */
+        @media (max-width: 1023px) {
+            html, body {
+                overflow-x: hidden;
+            }
+            
+            * {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+</html>
+</body>
+</html>
