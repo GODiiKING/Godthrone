@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone’s protagonist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../lore.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="">
+        <h2>Godthrone’s Stories</h2>
+    </header>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../browsergame.html">Browser Game</a>
+          <a href="../../loremenu/loremenu.html">Lore</a>
+          <a href="../../Story/storymenu.html">Story</a>
+        </div>
+      </div>
+      
+      <style>
+      .menu-panel {
+        position: fixed;
+        top: 20px;     /* distance from top */
+        right: 20px;   /* distance from right */
+        z-index: 9999;
+        text-align: right;
+      }
+      
+      /* Button styling */
+      .menu-toggle {
+        background: linear-gradient(45deg, #da4a6c, #ff6b9d);
+        border: none;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      /* Menu content */
+      #menuContent {
+        display: none; /* hidden initially */
+        margin-top: 8px;
+        background: rgba(0,0,0,0.8);
+        border-radius: 8px;
+        border: 2px solid #da4a6c;
+        text-align: right; /* aligns links to right */
+      }
+      
+      /* Links inside menu */
+      #menuContent a {
+        display: block;
+        color: #ff6b9d;
+        text-decoration: none;
+        margin: 5px 0;
+      }
+      
+      #menuContent a:hover {
+        color: #ffc;
+      }
+      </style>
+      
+      <script>
+      function toggleMenu() {
+        const menu = document.getElementById('menuContent');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = 'none';
+        }
+      }
+      </script>
+      
+    <!-- Main Content Section -->
+    <section class="content">
+        <!-- Path Lore Section -->
+        <style>
+    /* Only affects THIS specific block */
+    .lore-left {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .lore-left img {
+        flex-shrink: 0; /* Prevent shrinking */
+    }
+
+    .lore-left .text-details {
+        flex: 1; /* Text takes remaining space */
+    }
+</style>
+
+<div class="lore-section" id="">
+    <div class="stat-section" id="">
+        <div class="container lore-left">
+            
+            <img src="images/joker.png"
+                 alt="map"
+                 width="200px"
+                 height="200px">
+
+            <div class="text-details">
+                <h3>Background</h3>
+                <p>In the forgotten-ages, where the veils between gods and mortals were thinner.</p>
+                <p>Than the blood in one's veins, there arose a warrior who defied the very essence of mortality.</p>
+                <p>Not a champion of any-cause, nor a savior of any realms.</p>
+                <p>When civilizations were as nothing more than whispers in the dust.</p>
+                <p>Realms both in the living and the dead.</p>
+                <p>Slipping between-worlds as one might walk.</p>
+                <p>A being who transcends the boundaries of both life and death.</p>
+                <p>Not crafted by mortal hands, nor brought into existence through-divine means.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+        <!-- Path Lore Section -->
+<div class="lore-section" id="">
+    <div class="stat-section" id="">
+        <div class="container" style="display: flex; align-items: flex-start;">
+            
+            <div class="text-details" style="flex: 1;">
+                <h3>Background</h3>
+                <p>In the forgotten-ages, where the veils between gods and mortals were thinner.</p>
+                <p>Than the blood in one's veins, there arose a warrior who defied the very essence of mortality.</p>
+                <p>Not a champion of any-cause, nor a savior of any realms.</p>
+                <p>When civilizations were as nothing more than whispers in the dust.</p>
+                <p>Realms both in the living and the dead.</p>
+                <p>Slipping between-worlds as one might walk.</p>
+                <p>A being who transcends the boundaries of both life and death.</p>
+                <p>Not crafted by mortal hands, nor brought into existence through-divine means.</p>
+            </div>
+
+            <img src="images/joker.png"
+                 alt="map"
+                 width="200px"
+                 height="200px"
+                 style="margin-left: 20px;">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Show button with full opacity when scrolling
+        window.onscroll = function() {
+            const button = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.classList.add("show");
+            } else {
+                button.classList.remove("show");
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <style>
+        .scroll-to-top {
+            position: fixed !important;
+            bottom: 20px !important;
+            right: 20px !important;
+            background-color: #da4a6c !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 50% !important;
+            width: 50px !important;
+            height: 50px !important;
+            font-size: 20px !important;
+            cursor: pointer !important;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+            transition: all 0.3s ease !important;
+            z-index: 9999 !important;
+            opacity: 0.5 !important;
+            display: block !important;
+        }
+
+        .scroll-to-top:hover {
+            opacity: 1 !important;
+            transform: scale(1.1) !important;
+        }
+
+        .play-game-btn {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            padding: 12px 25px;
+            background-color:  #da4a6c;
+            color: white;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: 0.3s ease;
+            z-index: 9999;
+        }
+
+        .play-game-btn:hover {
+            background-color: #ff5555;
+            transform: scale(1.05);
+        }
+    </style>
+
+</body>
+    
+        <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mobile Optimized Lore Page</title>
+        <style>
+            /* Mobile Optimizations */
+            
+            /* Mobile phones (up to 767px) */
+            @media (max-width: 767px) {
+                body {
+                    padding: 0;
+                    -webkit-text-size-adjust: 100%;
+                    -webkit-font-smoothing: antialiased;
+                }
+                
+                .header {
+                    padding: 15px 10px;
+                }
+                
+                .header h2 {
+                    font-size: 1.5em;
+                    margin-bottom: 8px;
+                }
+                
+                .header p {
+                    font-size: 1em;
+                }
+                
+                .content {
+                    margin: 10px auto;
+                    padding: 15px;
+                }
+                
+                .lore-section h3, 
+                .stat-section h3, 
+                .alignment-section h3 {
+                    font-size: 1.4em;
+                    margin-bottom: 12px;
+                }
+                
+                .lore-text, 
+                .alignment-section p, 
+                .stat-section p {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+                
+                .container {
+                    flex-direction: column;
+                    gap: 15px;
+                }
+                
+                .text-1 {
+                    flex: 1 1 100%;
+                    padding: 15px;
+                    margin-bottom: 15px;
+                }
+                
+                .text-content img {
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 12px;
+                }
+                
+                .text-details h3 {
+                    font-size: 1.1em;
+                    margin-bottom: 8px;
+                }
+                
+                .text-details p {
+                    font-size: 0.85em;
+                    line-height: 1.4;
+                }
+                
+                .alignment-section .container {
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                }
+                
+                .alignment-section .text-1 {
+                    padding: 12px;
+                }
+                
+                .alignment-section .text-content h3 {
+                    font-size: 1.2em;
+                    margin-bottom: 6px;
+                }
+                
+                .alignment-section .text-content p {
+                    font-size: 0.85em;
+                }
+            }
+            
+            /* Small mobile phones (up to 480px) */
+            @media (max-width: 480px) {
+                .header {
+                    padding: 12px 8px;
+                }
+                
+                .header h2 {
+                    font-size: 1.3em;
+                }
+                
+                .header p {
+                    font-size: 0.9em;
+                }
+                
+                .content {
+                    padding: 12px;
+                }
+                
+                .lore-section h3, 
+                .stat-section h3, 
+                .alignment-section h3 {
+                    font-size: 1.2em;
+                }
+                
+                .text-1 {
+                    padding: 12px;
+                }
+                
+                .text-content img {
+                    width: 70px;
+                    height: 70px;
+                }
+                
+                .text-details h3 {
+                    font-size: 1em;
+                }
+                
+                .text-details p {
+                    font-size: 0.8em;
+                }
+            }
+            
+            /* Tablets (768px to 1023px) */
+            @media (min-width: 768px) and (max-width: 1023px) {
+                .container {
+                    gap: 18px;
+                }
+                
+                .text-1 {
+                    flex: 1 1 calc(50% - 18px);
+                }
+                
+                .alignment-section .container {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            /* Touch-friendly improvements for all mobile devices */
+            @media (max-width: 1023px) {
+                /* Make all clickable elements touch-friendly */
+                a, button {
+                    min-height: 44px;
+                    min-width: 44px;
+                    -webkit-tap-highlight-color: transparent;
+                    touch-action: manipulation;
+                }
+                
+                /* Improve text selection */
+                .text-1 {
+                    -webkit-user-select: text;
+                    -moz-user-select: text;
+                    -ms-user-select: text;
+                    user-select: text;
+                }
+                
+                /* Better hover effects for touch devices */
+                .text-1:hover {
+                    transform: none;
+                }
+                
+                .text-1:active {
+                    transform: scale(0.98);
+                    transition: transform 0.1s;
+                }
+            }
+            
+            /* Landscape orientation adjustments */
+            @media (orientation: landscape) and (max-height: 500px) {
+                .header {
+                    padding: 10px;
+                }
+                
+                .header h2 {
+                    font-size: 1.4em;
+                    margin-bottom: 5px;
+                }
+                
+                .content {
+                    padding: 10px;
+                }
+            }
+            
+            /* Remove horizontal scrollbar */
+            @media (max-width: 1023px) {
+                html, body {
+                    overflow-x: hidden;
+                }
+                
+                * {
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    </html>
+    

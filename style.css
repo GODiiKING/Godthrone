@@ -2,11 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lexend Exa', sans-serif;
-  background-image: url("godthronewallpaper.png"); /* change path to your image */
+  background-image: url("img/Godthronewallpaper.png"); /* change path to your image */
   background-size: cover;       /* makes it cover the whole screen */
   background-position: center;  /* centers the image */
   background-repeat: no-repeat; /* prevents tiling */
   height: 100vh;                /* ensures body covers full viewport */
+
+  overflow: hidden; /* prevents scrolling */
+
 }
 
 .button-box {
