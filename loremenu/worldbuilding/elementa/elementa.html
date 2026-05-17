@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the core Attributes of Godthrone">
+    <title>Godthrone | Attributes Lore</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../../css/global.css">
+</head>
+<body>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../browsergame.html">Browser Game</a>
+          <a href="../../Protagonist/protagonistmenu.html">Protagonist</a>
+          <a href="../../Story/world.html">Story</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../../mainmenu.html">HOME</a>
+            <span class="separator">/</span>
+            <a href="../../loremenu/loremenu.html">LORE</a>
+            <span class="separator">/</span>
+            <span class="current">CHOOSE YOUR ATTRIBUTES</span>
+        </nav>
+
+
+        <section class="stat-section">
+            <div class="interface">
+                <div class="card">
+                    <img src="image/strength.png" class="img-avatar" alt="Strength">
+                    <h3>Strength</h3>
+                    <p class="line-1">Physical Power</p>
+                    <p class="line-2">"Breaking bones and shattering wills."</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/speed.png" class="img-avatar" alt="Speed">
+                    <h3>Speed</h3>
+                    <p class="line-1">Agility & Reflexes</p>
+                    <p class="line-2">"Striking before they know they're dead."</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/stamina.png" class="img-avatar" alt="Stamina">
+                    <h3>Stamina</h3>
+                    <p class="line-1">Relentless Endurance</p>
+                    <p class="line-2">"My will remains unbroken."</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/magic.png" class="img-avatar" alt="Magic">
+                    <h3>Magic</h3>
+                    <p class="line-1">Elemental Mastery</p>
+                    <p class="line-2">"Bending forces into destruction."</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/wisdom.png" class="img-avatar" alt="Wisdom">
+                    <h3>Wisdom</h3>
+                    <p class="line-1">Insight & Perception</p>
+                    <p class="line-2">"Knowing the weakness in every soul."</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/creation.png" class="img-avatar" alt="Creation">
+                    <h3>Creation</h3>
+                    <p class="line-1">Life and Decay</p>
+                    <p class="line-2">"Crafting life from suffering."</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/anti-magic.png" class="img-avatar" alt="Anti-Magic">
+                    <h3>Anti-Magic</h3>
+                    <p class="line-1">The Great Silence</p>
+                    <p class="line-2">"The void that consumes magic."</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/arcane-magic.png" class="img-avatar" alt="Arcane Magic">
+                    <h3>Arcane Magic</h3>
+                    <p class="line-1">Power Stacks</p>
+                    <p class="line-2">"Tearing the fabric of reality."</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/creation.png" class="img-avatar" alt="Creation">
+                    <h3>Damnatus Sanguis</h3>
+                    <p class="line-1">Life and Decay</p>
+                    <p class="line-2">"Crafting life from suffering."</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/anti-magic.png" class="img-avatar" alt="Anti-Magic">
+                    <h3>Consciousness</h3>
+                    <p class="line-1">The Great Silence</p>
+                    <p class="line-2">"The void that consumes magic."</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/arcane-magic.png" class="img-avatar" alt="Arcane Magic">
+                    <h3>Collective Consciousness</h3>
+                    <p class="line-1">Power Stacks</p>
+                    <p class="line-2">"Tearing the fabric of reality."</p>
+                </div>
+            </div>
+        </section>
+
+        <button id="scrollToTop" onclick="scrollToTop()" 
+            style="display: none; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #000000; border: 1px solid #ff6b9d; color: #ff6b9d; cursor: pointer; z-index: 9999; align-items: center; justify-content: center; font-size: 20px;">
+            ↑
+        </button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "flex"; 
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

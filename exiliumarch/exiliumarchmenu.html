@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone | Choose Your Path</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="../mainmenu.html">Home</a>
+          <a href="../loremenu/loremenu.html">Lore</a>
+          <a href="../novels/novelsmenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="breadcrumb">
+    <a href="../mainmenu.html">Home</a>
+    <span class="separator">/</span>
+    <a href="../loremenu/loremenu.html">Lore</a>
+    <span class="separator">/</span>
+    <a href="../novels/novelsmenu.html">Novels</a>
+    <span class="separator">/</span>
+    <span class="current">Choose Your Path</span>
+</nav>
+
+
+        <div class="interface">
+            <a href="../exiliumarch/joker/joker.html" class="card" onclick="GameManager.setGameStart('Joker')">
+                <img src="../exiliumarch/joker/images/joker1.png" alt="joker" class="img-avatar">
+                <h3>Joker</h3>
+                <p class="line-1">Ancient and Cursed</p>
+                <p class="line-2">The Non-Protagonist Protagonist</p>
+                <p class="line-3">Lawful Evil</p>
+            </a>
+            
+            <a href="../exiliumarch/sangunuus/sangunuus.html" class="card" onclick="GameManager.setGameStart('Sangunuus')">
+                <img src="../exiliumarch/sangunuus/images/sangunuus1.png" alt="sangunuus" class="img-avatar">
+                <h3>Sangunuus</h3>
+                <p class="line-1">Blood and Borne</p>
+                <p class="line-2">Leviathan Horror</p>
+                <p class="line-3">Neutral Evil</p>
+            </a>
+
+                        <a href="../exiliumarch/khaos/khaos.html" class="card" onclick="GameManager.setGameStart('Khaos')">
+                <img src="../exiliumarch/khaos/images/khaos1.png" alt="khaos" class="img-avatar">
+                <h3>Khaos</h3>
+                <p class="line-1">Eater of Names</p>
+                <p class="line-2">Mythos of Creation</p>
+                <p class="line-3">Chaotic Neutral</p>
+            </a>
+
+                        <a href="../exiliumarch/kosmos/kosmos.html" class="card" onclick="GameManager.setGameStart('Kosmos')">
+                <img src="../exiliumarch/kosmos/images/kosmos1.png" alt="Kosmos" class="img-avatar">
+                <h3>Kosmos</h3>
+                <p class="line-1">The Omniversal Overseer</p>
+                <p class="line-2">Neutral good</p>
+                <p class="line-3">Dimensional Omnicide</p>
+            </a>
+            
+            <a href="../exiliumarch/voracium/voracium.html" class="card" onclick="GameManager.setGameStart('Voracium')">
+                <img src="../exiliumarch/voracium/images/voracium1.png" alt="Voracium" class="img-avatar">
+                <h3>Voracium</h3>
+                <p class="line-1">Devourer of Creation</p>
+                <p class="line-2">Harbinger of Death</p>
+                <p class="line-3">Chaotic Evil</p>
+            </a>
+
+                        <a href="../exiliumarch/malignis/malignis.html" class="card" onclick="GameManager.setGameStart('Mongen')">
+                <img src="../exiliumarch/malignis/images/malignis1.png" alt="Malignis" class="img-avatar">
+                <h3>Malignis</h3>
+                <p class="line-1">The Ultimate Phenomenon</p>
+                <p class="line-2">Lawful good</p>
+                <p class="line-3">Soulrend Decimator</p>
+            </a>
+
+                        <a href="../exiliumarch/excidi/excidi.html" class="card" onclick="GameManager.setGameStart('Wrazzix')">
+                <img src="../exiliumarch/excidi/images/excidi1.png" alt="Excidi" class="img-avatar">
+                <h3>Excidi</h3>
+                <p class="line-1">Archon of Annihilation</p>
+                <p class="line-2">Lawful neutral</p>
+                <p class="line-3">The Messianic Reaper</p>
+            </a>
+
+                        <a href="../exiliumarch/dominor/dominor.html" class="card" onclick="GameManager.setGameStart('Opriser')">
+                <img src="../exiliumarch/dominor/images/dominor1.png" alt="Dominor" class="img-avatar">
+                <h3>Dominor </h3>
+                <p class="line-1">The Sovereign of Supremacy</p>
+                <p class="line-2">Chaotic neutral</p>
+                <p class="line-3">Memento Mori</p>
+            </a>
+
+                <a href="../exiliumarch/arma/arma.html" class="card" onclick="GameManager.setGameStart('Shinblade')">
+                <img src="../exiliumarch/arma/images/arma1.png" alt="Arma" class="img-avatar">
+                <h3>Arma</h3>
+                <p class="line-1">The Ultimate Omniblade</p>
+                <p class="line-2">Chaotic neutral</p>
+                <p class="line-3">Infinite Infinitus</p>
+            </a>
+
+            <a href="../exiliumarch/illusor/illusor.html" class="card" onclick="GameManager.setGameStart('Hoodini')">
+                <img src="../exiliumarch/illusor/images/illusor1.png" alt="Illusor" class="img-avatar">
+                <h3>Illusor</h3>
+                <p class="line-1">Equilibrium of Creation</p>
+                <p class="line-2">Chaotic Neutral</p>
+                <p class="line-3">Stalker among the Star</p>
+            </a>
+            
+            <a href="../exiliumarch/amanuen/amanuen.html" class="card" onclick="GameManager.setGameStart('Van Cuba')">
+                <img src="../exiliumarch/amanuen/images/amanuen1.png" alt="Amanuen" class="img-avatar">
+                <h3>Amanuen</h3>
+                <p class="line-1">Dredged Entity</p>
+                <p class="line-2">Chaotic Neutral</p>
+                <p class="line-3">Scourge of Creation</p>
+            </a>
+        
+            
+            <a href="../exiliumarch/deus/deus.html" class="card" onclick="GameManager.setGameStart('Kami')">
+                <img src="../exiliumarch/deus/images/deus1.png" alt="Deus" class="img-avatar">
+                <h3>Deus</h3>
+                <p class="line-1">The Divine Delusion</p>
+                <p class="line-2">Neutral</p>
+                <p class="line-3">Authority Over Ending</p>
+            </a>
+        </div>
+    </div>
+
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()" style="display: none; align-items: center; justify-content: center;">↑</button>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+
+        // The Scroll Logic
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                // Force it to show using Protocol Pink if the CSS fails
+                btn.style.display = "flex"; 
+                btn.style.background = "#000000";
+                btn.style.border = "1px solid #ff6b9d";
+                btn.style.color = "#ff6b9d";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

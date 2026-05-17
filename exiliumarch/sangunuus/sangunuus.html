@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile of Sanguinuus">
+    <title>Godthrone | Sanguinuus Chronicles</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <style>
+        .wiki-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        .wiki-header {
+            font-family: 'Acme';
+            font-size: 1.3rem;
+            color: #ff6b9d;
+            border-bottom: 1px solid rgba(255, 107, 157, 0.3);
+            margin: 30px 0 15px 0;
+            padding-bottom: 5px;
+        }
+
+        .wiki-subheader {
+            font-family: 'Acme';
+            font-size: 1rem;
+            color: #fff;
+            margin: 20px 0 10px 0;
+        }
+
+        /* HARD SHRINK: Image cards reduced to 160px */
+        .img-card-right {
+            float: right;
+            width: 160px;
+            margin: 5px 0 15px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 107, 157, 0.4);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .img-card-left {
+            float: left;
+            width: 160px;
+            margin: 5px 20px 15px 0;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 107, 157, 0.4);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .wiki-img {
+            width: 100%;
+            height: 140px; 
+            object-fit: cover; 
+            display: block;
+            border-radius: 4px;
+        }
+
+        .img-caption {
+            font-size: 0.5rem;
+            color: #ffc048;
+            margin-top: 5px;
+            padding: 0 5px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .info-table {
+            width: 100%;
+            font-size: 0.5rem;
+            border-collapse: collapse;
+            margin-top: 8px;
+        }
+
+        .info-table td {
+            padding: 3px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-label { color: #fff; font-weight: bold; width: 45%; }
+        .info-data { color: #ffc048; text-align: right; }
+
+        .wiki-text {
+            font-size: 0.72rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        .wiki-text p { margin-bottom: 15px; }
+
+        .clear { clear: both; }
+
+        @media (max-width: 768px) {
+            .img-card-right, .img-card-left { float: none; width: 100%; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../loremenu/loremenu.html">Lore</a>
+          <a href="../../novels/novelsmenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container wiki-container">
+        <!-- BREADCRUMBS -->
+        <nav class="breadcrumb">
+            <a href="../../mainmenu.html">HOME</a> <span class="separator">/</span>
+            <a href="../protagonistmenu.html">PROTAGONISTS</a> <span class="separator">/</span>
+            <span class="current">SANGUINUUS</span>
+        </nav>
+
+        <!-- NUMERICAL NAV -->
+        <nav class="breadcrumb" style="margin-top: -15px; margin-bottom: 30px; font-size: 0.55rem; opacity: 0.7;">
+    <span class="separator">[</span>
+    <span style="color: #ffc048;">1</span> <span class="separator">|</span>
+    <a href="./sangunuus-stats.html">2</a> <span class="separator">|</span>
+    <a href="./sangunuus-proficiencies.html">3</a> <span class="separator">|</span>
+    <a href="./sangunuus-equipment.html">4</a> <span class="separator">|</span>
+    <a href="./sangunuus-chronicles.html">5</a>
+    <span class="separator">]</span>
+</nav>
+
+ <div class="title" style="margin-bottom: 25px;">
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px;">WIKIPEDIA</h1>
+        </div>
+
+        <!-- INTRO -->
+        <section>
+            <div class="img-card-right">
+                <img src="../../exiliumarch/sanguinuus/images/sanguinuus1.png" class="wiki-img">
+                <div class="img-caption">Sanguinuus</div>
+                <table class="info-table">
+                    <tr><td class="info-label">Title</td><td class="info-data">Blood Sovereign</td></tr>
+                    <tr><td class="info-label">Threat</td><td class="info-data">Catastrophic</td></tr>
+                    <tr><td class="info-label">Novel</td><td class="info-data">Crimson Tide</td></tr>
+                    <tr><td class="info-label">Role</td><td class="info-data">Life Binder</td></tr>
+                </table>
+            </div>
+
+            <div class="wiki-text">
+                <p>
+                    <strong>Sanguinuus</strong> is the embodiment of the flowing essence, a master of vitality who commands the red currents of existence. He does not seek the throne of men but the pulse that keeps them tethered to the waking world.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- 1. BACKGROUND -->
+        <section id="background">
+            <h2 class="wiki-header">Background</h2>
+            <div class="img-card-left">
+                <img src="../../exiliumarch/sanguinuus/images/sanguinuus1.png" class="wiki-img">
+                <div class="img-caption">The First Pulse.</div>
+            </div>
+            <div class="wiki-text">
+                <p>Born from the overflow of the world's original font, Sanguinuus has existed as long as there has been heat in the veins of the living. He is the guardian of the crimson transition between life and the beyond.</p>
+                <p>He views the world as a network of vessels and currents, moving through history like a silent heartbeat that ensures the cycle of renewal never truly grinds to a halt.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- 2. PERSONALITY -->
+        <section id="personality">
+            <h2 class="wiki-header">Personality</h2>
+            <div class="img-card-right">
+                <img src="../../exiliumarch/sanguinuus/images/sanguinuus1.png" class="wiki-img">
+                <div class="img-caption">Cold Vitality.</div>
+            </div>
+            <div class="wiki-text">
+                <p>Sanguinuus is clinical and precise, treating every interaction with the weight of a life or death decision. He possesses a strange form of empathy that allows him to feel the strain on every soul nearby.</p>
+                <p>He is neither cruel nor kind, but rather an elemental force that acts when the balance of vitality is threatened, showing a ruthless efficiency in preserving the flow of the world.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- 3. APPEARANCE -->
+        <section id="appearance">
+            <h2 class="wiki-header">Appearance</h2>
+            <div class="img-card-left">
+                <img src="../../exiliumarch/sanguinuus/images/sanguinuus1.png" class="wiki-img">
+                <div class="img-caption">The Crimson Form.</div>
+            </div>
+            <div class="wiki-text">
+                <p>His physical form is a masterpiece of fluid grace, often appearing draped in robes that seem to ripple like liquid. His presence brings a warmth to the air that feels both comforting and suffocating.</p>
+                <p>His eyes glow with a deep ruby light that reflects the countless lives he has witnessed, and his touch is said to be enough to either mend a broken heart or stop one entirely.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- 4. ABILITIES -->
+        <section id="abilities">
+            <h2 class="wiki-header">Abilities</h2>
+            <div class="img-card-right">
+                <img src="../../exiliumarch/sanguinuus/images/sanguinuus1.png" class="wiki-img">
+                <div class="img-caption">The Sanguine Arts.</div>
+            </div>
+            <div class="wiki-text">
+                <p>
+                    Through the <strong>Vessel Control</strong> technique, Sanguinuus can manipulate the internal flow of any entity within his range. He can accelerate healing or induce a total systemic shutdown with a flick of his wrist.
+                </p>
+                <p>
+                    His primary art, <strong>Heartbeat Echo</strong>, allows him to mirror the life force of his enemies, turning their own strength against them until they are left drained and empty of all will.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- 5. HISTORY -->
+        <section id="history">
+            <h2 class="wiki-header">History</h2>
+            <h3 class="wiki-subheader">The Great Coagulation</h3>
+            <div class="wiki-text">
+                <p>
+                    In the chronicles of the old era, Sanguinuus was the one who ended the <strong>Great Coagulation</strong>, a period where time and life had become stagnant. He tore through the stillness to restore the motion of the spheres.
+                </p>
+                <p>
+                    By sacrificing a portion of his own essence, he created the <strong>Eternal Arteries</strong>, the spiritual paths that allow mana to flow across the different realms today.
+                </p>
+
+                <div class="img-card-left">
+                    <img src="../../exiliumarch/sanguinuus/images/sanguinuus1.png" class="wiki-img">
+                    <div class="img-caption">Restoring the Flow.</div>
+                </div>
+
+                <p>
+                    Since that time, he has remained in the shadows, only appearing when the world becomes too still or when a new horror threatens to poison the very life force of the inhabitants of the Mere.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- NAVIGATION BUTTONS -->
+        <div style="margin-top: 60px; display: flex; flex-direction: column; align-items: center; gap: 15px; padding-bottom: 60px;">
+            <button class="menu-toggle" onclick="window.location.href='../../browsergame.html'" style="padding: 12px 25px; border-color: #ffc048; color: #ffc048; background: transparent; cursor: pointer;">PLAY BATTLE ARENA</button>
+        </div>
+
+        <button id="scrollToTop" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #000; border: 1px solid #ff6b9d; color: #ff6b9d; cursor: pointer; z-index: 9999; align-items: center; justify-content: center; font-size: 20px;">↑</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "flex"; 
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>

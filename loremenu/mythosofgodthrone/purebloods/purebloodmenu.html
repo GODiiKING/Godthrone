@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone | Choose Your Path</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../../css/global.css">
+</head>
+<body>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="../../../mainmenu.html">Home</a>
+          <a href="../../../loremenu/loremenu.html">Lore</a>
+          <a href="../../../novels/storymenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="breadcrumb">
+    <a href="../../../mainmenu.html">Home</a>
+    <span class="separator">/</span>
+    <a href="../../../loremenu/loremenu.html">Lore</a>
+    <span class="separator">/</span>
+    <a href="../../../novels/storymenu.html">Novels</a>
+    <span class="separator">/</span>
+    <span class="current">Choose Your Path</span>
+</nav>
+
+        <div class="interface">
+            <a href="../../../loremenu/mythosofgodthrone/purebloods/zizius/zizius.html" class="card">
+                <img src="../../../image/mythosofgodthrone/purebloods/purebloods1.png" alt="Browser Game" class="img-avatar">
+                <h3>Zizius</h3>
+                <p class="line-1">Enter Godthrone, a realm of blood, steel, and eternal battle.</p>
+                <p class="line-2">Choose your character and embrace your fate.</p>
+                <p class="line-3">Only death can crown a true victor.</p>
+            </a>
+            
+            <a href="../../../loremenu/mythosofgodthrone/purebloods/kiana/kiana.html" class="card">
+                <img src="../../../image/mythosofgodthrone/purebloods/purebloods2.png" alt="Lore" class="img-avatar">
+                <h3>Kiana</h3>
+                <p class="line-1">Every shadow has a story.</p>
+                <p class="line-2">Discover the legends of heroes and villains alike.</p>
+                <p class="line-3">Secrets written in blood.</p>
+            </a>
+            
+            <a href="../../../loremenu/mythosofgodthrone/purebloods/aien/aien.html" class="card">
+                <img src="../../../image/mythosofgodthrone/purebloods/purebloods3.png" alt="Story" class="img-avatar">
+                <h3>Aien</h3>
+                <p class="line-1">Welcome to the story of Godthrone.</p>
+                <p class="line-2">Nightmares born from legends.</p>
+                <p class="line-3">Witness the darkness.</p>
+            </a>
+
+            <a href="../../../loremenu/mythosofgodthrone/purebloods/xezphine/xezphine.html" class="card">
+                <img src="../../../image/mythosofgodthrone/purebloods/purebloods4.png" alt="Story" class="img-avatar">
+                <h3>Xezphine</h3>
+                <p class="line-1">Welcome to the story of Godthrone.</p>
+                <p class="line-2">Nightmares born from legends.</p>
+                <p class="line-3">Witness the darkness.</p>
+            </a>
+    </div>
+
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()" style="display: none; align-items: center; justify-content: center;">↑</button>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+
+        // The Scroll Logic
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                // Force it to show using Protocol Pink if the CSS fails
+                btn.style.display = "flex"; 
+                btn.style.background = "#000000";
+                btn.style.border = "1px solid #ff6b9d";
+                btn.style.color = "#ff6b9d";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

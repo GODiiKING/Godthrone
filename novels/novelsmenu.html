@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the volumes of Godthrone">
+    <title>Godthrone | Novels</title>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
+        <div id="menuContent">
+          <a href="../mainmenu.html">Home</a>
+          <a href="../loremenu/loremenu.html">Lore</a>
+          <a href="../novels/novelsmenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../mainmenu.html">HOME</a>
+            <span class="separator">/</span>
+            <span class="current">CHOOSE YOUR NOVEL</span>
+        </nav>
+
+        <div class="interface">
+            <a href="./volume-1/volume-1menu.html" class="card">
+                <img src="images/Godthrone Continent.png" class="img-avatar" alt="Volume 1">
+                <h3>Volume 1</h3>
+                <p class="line-1">Blood & Steel</p>
+                <p class="line-2">The first chronicle of consciousness.</p>
+                <p class="line-3">Eternal Battle</p>
+            </a>
+            
+            <div class="card">
+                <img src="images/joker.png" class="img-avatar" alt="Coming Soon">
+                <h3>Coming Soon</h3>
+                <p class="line-1">Future Volume</p>
+                <p class="line-2">The journey continues.</p>
+            </div>
+            
+            <div class="card">
+                <img src="images/purebloods2.png" class="img-avatar" alt="Coming Soon">
+                <h3>Coming Soon</h3>
+                <p class="line-1">Future Volume</p>
+                <p class="line-2">Hidden Realms.</p>
+            </div>
+            
+            <div class="card">
+                <img src="images/spacegod2.png" class="img-avatar" alt="Coming Soon">
+                <h3>Coming Soon</h3>
+                <p class="line-1">Future Volume</p>
+                <p class="line-2">Celestial Fate.</p>
+            </div>
+        </div>
+
+        <button id="scrollToTop" onclick="scrollToTop()" 
+            style="display: none; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #000000; border: 1px solid #ff6b9d; color: #ff6b9d; cursor: pointer; z-index: 9999; align-items: center; justify-content: center; font-size: 20px;">
+            ↑
+        </button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "flex"; 
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

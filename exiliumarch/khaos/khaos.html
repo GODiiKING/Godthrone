@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile of Chaos: Eater of Names">
+    <title>Godthrone | Chaos Chronicles</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <style>
+        .wiki-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        .wiki-header {
+            font-family: 'Acme';
+            font-size: 1.3rem;
+            color: #ff6b9d;
+            border-bottom: 1px solid rgba(255, 107, 157, 0.3);
+            margin: 30px 0 15px 0;
+            padding-bottom: 5px;
+        }
+
+        .wiki-subheader {
+            font-family: 'Acme';
+            font-size: 1rem;
+            color: #fff;
+            margin: 20px 0 10px 0;
+        }
+
+        /* HARD SHRINK: Image cards reduced to 160px */
+        .img-card-right {
+            float: right;
+            width: 160px;
+            margin: 5px 0 15px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 107, 157, 0.4);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .img-card-left {
+            float: left;
+            width: 160px;
+            margin: 5px 20px 15px 0;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 107, 157, 0.4);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .wiki-img {
+            width: 100%;
+            height: 140px; 
+            object-fit: cover; 
+            display: block;
+            border-radius: 4px;
+        }
+
+        .img-caption {
+            font-size: 0.5rem;
+            color: #ffc048;
+            margin-top: 5px;
+            padding: 0 5px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .info-table {
+            width: 100%;
+            font-size: 0.5rem;
+            border-collapse: collapse;
+            margin-top: 8px;
+        }
+
+        .info-table td {
+            padding: 3px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-label { color: #fff; font-weight: bold; width: 45%; }
+        .info-data { color: #ffc048; text-align: right; }
+
+        .wiki-text {
+            font-size: 0.72rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        .wiki-text p { margin-bottom: 15px; }
+
+        .clear { clear: both; }
+
+        @media (max-width: 768px) {
+            .img-card-right, .img-card-left { float: none; width: 100%; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../loremenu/loremenu.html">Lore</a>
+          <a href="../../novels/novelsmenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container wiki-container">
+        <!-- BREADCRUMBS -->
+        <nav class="breadcrumb">
+            <a href="../../mainmenu.html">HOME</a> <span class="separator">/</span>
+            <a href="../protagonistmenu.html">PROTAGONISTS</a> <span class="separator">/</span>
+            <span class="current">CHAOS</span>
+        </nav>
+
+        <!-- NUMERICAL NAV -->
+        <nav class="breadcrumb" style="margin-top: -15px; margin-bottom: 30px; font-size: 0.55rem; opacity: 0.7;">
+            <span class="separator">[</span>
+            <span style="color: #ffc048;">1</span> <span class="separator">|</span>
+            <a href="./khaos-stats.html">2</a> <span class="separator">|</span>
+            <a href="./khaos-proficiencies.html">3</a> <span class="separator">|</span>
+            <a href="./khaos-equipment.html">4</a> <span class="separator">|</span>
+            <a href="./khaos-chronicles.html">5</a>
+            <span class="separator">]</span>
+        </nav>
+
+        <div class="title" style="margin-bottom: 25px;">
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px;">WIKIPEDIA</h1>
+        </div>
+
+        <!-- INTRO -->
+        <section>
+            <div class="img-card-right">
+                <img src="../../exiliumarch/khaos/images/khaos1.png" class="wiki-img">
+                <div class="img-caption">Khaos</div>
+                <table class="info-table">
+                    <tr><td class="info-label">Title</td><td class="info-data">Eater of Names</td></tr>
+                    <tr><td class="info-label">Threat</td><td class="info-data">77/100</td></tr>
+                    <tr><td class="info-label">Novel</td><td class="info-data">Mythos of Creation</td></tr>
+                    <tr><td class="info-label">Role</td><td class="info-data">Incorporeal Dark</td></tr>
+                </table>
+            </div>
+
+            <div class="wiki-text">
+                <p>
+                    <strong>Khaos: Eater of Names</strong> is a shadowy incorporeal entity dwelling within a human vessel. He is known by many titles including The Unspeakable, He Who is Not to be Named, and the Lord of Interstellar Spaces. He embodies the pure concept of nothingness.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- 1. BACKGROUND -->
+        <section id="background">
+            <h2 class="wiki-header">Background</h2>
+            <div class="img-card-left">
+                <img src="../../exiliumarch/khaos/images/khaos1.png" class="wiki-img">
+                <div class="img-caption">The Waiting Dark.</div>
+            </div>
+            <div class="wiki-text">
+                <p>He was once a man, but he is no longer. He has become a waiting dark, a presence that exists between the stars. As the Eater of Names, his history is one of consumption, where identity itself is dissolved into his void.</p>
+                <p>He functions as the Mythos of Creation, representing the absolute silence and absence that preceded the first light of the world cycles.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- 2. PERSONALITY -->
+        <section id="personality">
+            <h2 class="wiki-header">Personality</h2>
+            <div class="img-card-right">
+                <img src="../../exiliumarch/khaos/images/khaos1.png" class="wiki-img">
+                <div class="img-caption">The Void Individualist.</div>
+            </div>
+            <div class="wiki-text">
+                <p>Chaos follows his own heart, shirking the rules and traditions of the Mundus. He is an individualist who promotes the ideals of freedom above all else, though it is his own freedom that always comes first.</p>
+                <p>To Chaos, the concepts of good and evil are secondary to his need to remain unbound. He moves through existence with a clinical detachment from the protocols of the High Gods.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- 3. APPEARANCE -->
+        <section id="appearance">
+            <h2 class="wiki-header">Appearance</h2>
+            <div class="img-card-left">
+                <img src="../../exiliumarch/khaos/images/khaos1.png" class="wiki-img">
+                <div class="img-caption">Lord of Interstellar Spaces.</div>
+            </div>
+            <div class="wiki-text">
+                <p>Though he occupies a human body, his true form is an incorporeal shadow that occasionally bleeds through the physical shell. He appears as a living void, absorbing the light around him.</p>
+                <p>His presence is marked by a profound silence, and those who look too closely into his vessel often report seeing the infinite emptiness of interstellar space staring back at them.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- 4. ABILITIES -->
+        <section id="abilities">
+            <h2 class="wiki-header">Abilities</h2>
+            <div class="img-card-right">
+                <img src="../../exiliumarch/khaos/images/khaos1.png" class="wiki-img">
+                <div class="img-caption">The Blackened Silence.</div>
+            </div>
+            <div class="wiki-text">
+                <p>
+                    Khaos has mastered the <strong>Rule of Threes</strong>, weaving together Time, Space, and Shadow into the art of Blackened Silence. He can see through the comfortable lies of existence using his <strong>Abysmal Sight</strong>.
+                </p>
+                <p>
+                    As a being of a higher dimension, he can consume magic to fuel his arcane techniques, manifesting artifacts like the <strong>Thousand Faced Darkness</strong> to devour eternity itself.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- 5. HISTORY -->
+        <section id="history">
+            <h2 class="wiki-header">History</h2>
+            <h3 class="wiki-subheader">The Formation of the Obscenities</h3>
+            <div class="wiki-text">
+                <p>
+                    Forged in the moment when reality first learned to fear itself, Khaos birthed the <strong>Twin Obscenities</strong>. These blades, Whisper and Hunger, were born from the unholy fusion of four cursed weapons that violated the rules of warfare.
+                </p>
+                <p>
+                    He used these horrors to carve a path through the ancient era, turning combat into a feeding frenzy that offended existence itself. He remains an anomaly that reality cannot delete without risking total collapse.
+                </p>
+
+                <div class="img-card-left">
+                    <img src="../../exiliumarch/khaos/images/khaos1.png" class="wiki-img">
+                    <div class="img-caption">Feeding the Void.</div>
+                </div>
+
+                <p>
+                    He continues to dwell in the interstellar spaces, waiting for the moments when the Mundus becomes fragile enough for the nothingness to reclaim what was once taken.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <!-- NAVIGATION BUTTONS -->
+        <div style="margin-top: 60px; display: flex; flex-direction: column; align-items: center; gap: 15px; padding-bottom: 60px;">
+            <button class="menu-toggle" onclick="window.location.href='../../browsergame.html'" style="padding: 12px 25px; border-color: #ffc048; color: #ffc048; background: transparent; cursor: pointer;">PLAY BATTLE ARENA</button>
+        </div>
+
+        <button id="scrollToTop" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #000; border: 1px solid #ff6b9d; color: #ff6b9d; cursor: pointer; z-index: 9999; align-items: center; justify-content: center; font-size: 20px;">↑</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "flex"; 
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>
