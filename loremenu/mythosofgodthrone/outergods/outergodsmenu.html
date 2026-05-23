@@ -27,7 +27,7 @@
         <nav class="breadcrumb">
     <a href="../outergods/nihilithardominionlegions/nihilithardominionlegionmenu.html">Nihilithar Dominion Legion</a>
     <span class="separator">/</span>
-    <a href="../../../loremenu/loremenu.html">Lore</a>
+    <a href="../../../loremenu/mythosofgodthrone/mythos.html">Mythos</a>
     <span class="separator">/</span>
     <a href="../../../novels/storymenu.html">Novels</a>
     <span class="separator">/</span>
@@ -68,7 +68,11 @@
             </a>
     </div>
 
-    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()" style="display: none; align-items: center; justify-content: center;">↑</button>
+    <button id="scrollToTop" onclick="scrollToTop()" 
+            style="display: none; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #000000; border: 1px solid #ff6b9d; color: #ff6b9d; cursor: pointer; z-index: 9999; align-items: center; justify-content: center; font-size: 20px;">
+            ↑
+        </button>
+    </div>
 
     <script>
         function toggleMenu() {
@@ -76,15 +80,10 @@
             menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
         }
 
-        // The Scroll Logic
         window.onscroll = function() {
             const btn = document.getElementById("scrollToTop");
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                // Force it to show using Protocol Pink if the CSS fails
                 btn.style.display = "flex"; 
-                btn.style.background = "#000000";
-                btn.style.border = "1px solid #ff6b9d";
-                btn.style.color = "#ff6b9d";
             } else {
                 btn.style.display = "none";
             }
