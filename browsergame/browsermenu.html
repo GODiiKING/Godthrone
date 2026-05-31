@@ -35,57 +35,60 @@
 </nav>
 
         <div class="interface">
-            <a href="../browsergame/browsergame.html" class="card">
-                <img src="../image/mythosofgodthrone/exiliumarch/joker.png" alt="Browser Game" class="img-avatar">
+            <a href="../loremenu/loremenu.html" class="card">
+                <img src="../image/mythosofgodthrone/exiliumarch/joker.png" alt="Gehenna" class="img-avatar">
                 <h3>Godthrone: Gehenna</h3>
-                <p class="line-1">Enter Godthrone, a realm of blood, steel, and eternal battle.</p>
-                <p class="line-2">Choose your character and embrace your fate.</p>
-                <p class="line-3">Only death can crown a true victor.</p>
+                <p class="line-1">Unearth the rot feeding on the divine roots.</p>
+                <p class="line-2">Feast upon the memories of forgotten deities.</p>
+                <p class="line-3">The corruption demands absolute submission.</p>
             </a>
             
             <a href="../loremenu/loremenu.html" class="card">
-                <img src="../image/mythosofgodthrone/exiliumarch/deus.png" alt="Lore" class="img-avatar">
+                <img src="../image/mythosofgodthrone/exiliumarch/deus.png" alt="Pandemonium" class="img-avatar">
                 <h3>Godthrone: Pandemonium</h3>
-                <p class="line-1">Every shadow has a story.</p>
-                <p class="line-2">Discover the legends of heroes and villains alike.</p>
-                <p class="line-3">Secrets written in blood.</p>
+                <p class="line-1">Expose the catastrophic lies that birthed creation.</p>
+                <p class="line-2">Harvest the raw psychic static of dead civilizations.</p>
+                <p class="line-3">To know the dark is to be consumed by it.</p>
             </a>
             
-            <a href="../novels/storymenu.html" class="card">
-                <img src="../image/mythosofgodthrone/exiliumarch/excidi.png" alt="Novels" class="img-avatar">
+            <a href="../loremenu/loremenu.html" class="card">
+                <img src="../image/mythosofgodthrone/exiliumarch/excidi.png" alt="Requiem" class="img-avatar">
                 <h3>Godthrone: Requiem</h3>
-                <p class="line-1">Welcome to the story of Godthrone.</p>
-                <p class="line-2">Nightmares born from legends.</p>
-                <p class="line-3">Witness the darkness.</p>
+                <p class="line-1">Sing the final mass for a bleeding sky.</p>
+                <p class="line-2">Mourn the architects who built their own graves.</p>
+                <p class="line-3">Silence is the final monument of power.</p>
             </a>
         </div>
     </div>
 
-    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()" style="display: none; align-items: center; justify-content: center;">↑</button>
+    <button id="scrollToTop" onclick="scrollToTop()" aria-label="Scroll back to top"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #000000; border: 1px solid #ff6b9d; color: #ff6b9d; cursor: pointer; z-index: 9999; align-items: center; justify-content: center; font-size: 20px;">
+    ↑
+</button>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menuContent');
-            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menuContent');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    // The Scroll Logic
+    window.onscroll = function() {
+        const btn = document.getElementById("scrollToTop");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            // Force it to show using Protocol Pink if the CSS fails
+            btn.style.display = "flex"; 
+            btn.style.background = "#000000";
+            btn.style.border = "1px solid #ff6b9d";
+            btn.style.color = "#ff6b9d";
+        } else {
+            btn.style.display = "none";
         }
+    };
 
-        // The Scroll Logic
-        window.onscroll = function() {
-            const btn = document.getElementById("scrollToTop");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                // Force it to show using Protocol Pink if the CSS fails
-                btn.style.display = "flex"; 
-                btn.style.background = "#000000";
-                btn.style.border = "1px solid #ff6b9d";
-                btn.style.color = "#ff6b9d";
-            } else {
-                btn.style.display = "none";
-            }
-        };
-
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
 </body>
 </html>

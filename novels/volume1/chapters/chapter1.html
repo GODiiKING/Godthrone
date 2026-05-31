@@ -17,9 +17,9 @@
     <div class="menu-panel">
         <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
         <div id="menuContent">
-          <a href="../../../mainmenu.html">Home</a>
-          <a href="../../../loremenu/loremenu.html">Lore</a>
-          <a href="../../../novels/novelsmenu.html">Novels</a>
+            <a href="../../../mainmenu.html">Home</a>
+            <a href="../../../loremenu/loremenu.html">Lore</a>
+            <a href="../../../novels/novelsmenu.html">Novels</a>
         </div>
     </div>
 
@@ -47,9 +47,9 @@
         </nav>
 
         <div class="title" style="margin-bottom: 15px; text-align: center;">
-    <h1 style="font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 0;">Chapter 1</h1>
-    <p style="font-size: 0.6rem; letter-spacing: 1px; opacity: 0.6; text-transform: uppercase;">The First Awakening</p>
-</div>
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 0;">Chapter 1</h1>
+            <p style="font-size: 0.6rem; letter-spacing: 1px; opacity: 0.6; text-transform: uppercase;">The First Awakening</p>
+        </div>
 
         <article class="reading-sanctum" style="max-width: 700px; width: 100%; margin: 0 auto; line-height: 1.7; letter-spacing: 0.3px; font-size: 0.85rem;">
             
@@ -113,6 +113,7 @@
             const menu = document.getElementById('menuContent');
             menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
         }
+        
         window.onscroll = function() {
             const btn = document.getElementById("scrollToTop");
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -121,6 +122,7 @@
                 btn.style.display = "none";
             }
         };
+        
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }

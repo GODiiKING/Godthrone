@@ -17,9 +17,9 @@
     <div class="menu-panel">
         <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
         <div id="menuContent">
-          <a href="../../../mainmenu.html">Home</a>
-          <a href="../../../loremenu/loremenu.html">Lore</a>
-          <a href="../../../novels/novelsmenu.html">Novels</a>
+            <a href="../../../mainmenu.html">Home</a>
+            <a href="../../../loremenu/loremenu.html">Lore</a>
+            <a href="../../../novels/novelsmenu.html">Novels</a>
         </div>
     </div>
 
@@ -38,7 +38,7 @@
             <span class="separator">|</span>
             <a href="chapter2.html">2</a>
             <span class="separator">|</span>
-            <a href="chapter3.html">3</a>
+            <span style="color: #ffc048;">3</span>
             <span class="separator">|</span>
             <a href="chapter4.html">4</a>
             <span class="separator">|</span>
@@ -47,11 +47,11 @@
         </nav>
 
         <div class="title" style="margin-bottom: 15px; text-align: center;">
-    <h1 style="font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 0;">Chapter 3</h1>
-    <p style="font-size: 0.6rem; letter-spacing: 1px; opacity: 0.6; text-transform: uppercase;">The First Awakening</p>
-</div>
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 0;">Chapter 3</h1>
+            <p style="font-size: 0.6rem; letter-spacing: 1px; opacity: 0.6; text-transform: uppercase;">The Age of Dominion</p>
+        </div>
 
-       <article class="reading-sanctum" style="max-width: 700px; width: 100%; margin: 0 auto; line-height: 1.7; letter-spacing: 0.3px; font-size: 0.85rem;">
+        <article class="reading-sanctum" style="max-width: 700px; width: 100%; margin: 0 auto; line-height: 1.7; letter-spacing: 0.3px; font-size: 0.85rem;">
             
             <p style="margin-bottom: 20px;">Zephryn returns to his kingdom of Solara and informs his wife Toxara of the being who called himself god upon the throne, Aien, ruler of the Godthrone continent. He tells her that all of Mundus must begin preparing, for the Mere already sense that the Godthrone continent is surrounded by threats beyond their own consciousness. Fear is spreading, but so is awareness. Zephryn says he believes the Mere can survive what is coming. They can grow beyond their current limitations, develop new experiences, and gain greater power than ever before. This moment, though dangerous, is also an opportunity.</p>
 
@@ -133,6 +133,7 @@
             const menu = document.getElementById('menuContent');
             menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
         }
+        
         window.onscroll = function() {
             const btn = document.getElementById("scrollToTop");
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -141,6 +142,7 @@
                 btn.style.display = "none";
             }
         };
+        
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }

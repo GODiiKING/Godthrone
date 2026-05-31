@@ -17,9 +17,9 @@
     <div class="menu-panel">
         <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
         <div id="menuContent">
-          <a href="../../../mainmenu.html">Home</a>
-          <a href="../../../loremenu/loremenu.html">Lore</a>
-          <a href="../../../novels/novelsmenu.html">Novels</a>
+            <a href="../../../mainmenu.html">Home</a>
+            <a href="../../../loremenu/loremenu.html">Lore</a>
+            <a href="../../../novels/novelsmenu.html">Novels</a>
         </div>
     </div>
 
@@ -42,14 +42,14 @@
             <span class="separator">|</span>
             <a href="chapter4.html">4</a>
             <span class="separator">|</span>
-            <a href="chapter5.html">5</a>
+            <span style="color: #ffc048;">5</span>
             <span class="separator">]</span>
         </nav>
 
         <div class="title" style="margin-bottom: 15px; text-align: center;">
-    <h1 style="font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 0;">Chapter 5</h1>
-    <p style="font-size: 0.6rem; letter-spacing: 1px; opacity: 0.6; text-transform: uppercase;">The Godthrone's Gambit</p>
-</div>
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 0;">Chapter 5</h1>
+            <p style="font-size: 0.6rem; letter-spacing: 1px; opacity: 0.6; text-transform: uppercase;">The Godthrone's Gambit</p>
+        </div>
 
         <article class="reading-sanctum" style="max-width: 700px; width: 100%; margin: 0 auto; line-height: 1.7; letter-spacing: 0.3px; font-size: 0.85rem;">
             
@@ -75,7 +75,7 @@
 
             <p style="margin-bottom: 20px;">Valarae acknowledged the truth in his words. Babel itself was the problem. Without warning, she vanished into a fold of shadow. Kaelen was left momentarily questioning how she escaped the lock of the tower, but he does not dwell on the mystery. He continued forward, cutting down the remaining forces of The Sanguine Ghouls and The Stillborn Star within Aurantium until the halls were silent once more. He arrived at Nigrum soon after, the air thick with the scent of ozone and copper. He encountered several soldiers of The Preceded Light who had remained behind in the fading hope that he survived. They confirmed Lysara was safe and informed him of the current location of Zarenor.</p>
 
-            <p style="margin-bottom: 20px;">Zarenor now stood before the gates of Babel alongside his new master, Zosaius. Kaelen asked about Dravelyn and his legion, The Hemorrhage of Sight. The soldiers told him that Dravelyn had fled alongside them after the presence of Zosaius was felt by the Nachash. They pleaded with Kaelen, admitting the mission to rescue Calian had failed. They urged him to abandon Babel before the Blackened Dominion unleashed its full wrath upon the survivors. Kaelen reassured them that he would still attempt to save Calian. He believed that the human soul of the man had not been fully consumed by the being.</p>
+            <p style="margin-bottom: 20px;">Zarenor now stood before the gates of Babel alongside his new master, Zosaius. Kaelen asked about Dravelyn and his legion, The Hemorrhage of Sight. The soldiers told him that Dravelyn had fled alongside them after the presence of Zosaius was felt by the Nachash. They pleaded with Kaelen, admitting the mission to rescue Calian had failed. They surged him to abandon Babel before the Blackened Dominion unleashed its full wrath upon the survivors. Kaelen reassured them that he would still attempt to save Calian. He believed that the human soul of the man had not been fully consumed by the being.</p>
 
             <p style="margin-bottom: 20px;">He left the halls of Babel and stepped into a world of absolute chaos. Zarenor and The Stillborn Star were locked in a desperate battle against The Blackstar Reapers. In the distance, Kaelen saw the Nachash and Zosaius standing amidst the battlefield, engaged in a conversation that seemed to ignore the violence around them. He watched, uncertain of their true purpose. Meanwhile, the Nachash observed as Dravelyn and his legion struggled to hold their ground. Yet the Nachash did not fight back with their usual cruelty. Their focus had shifted. A disturbance spread through their collective consciousness like a ripple on a dark pond. From the third level of Babel, Rubrum, a new power began to emerge, consuming and reshaping their shared awareness.</p>
 
@@ -100,12 +100,11 @@
             <p style="margin-bottom: 20px;">Roxara remained satisfied. Enough survived to rebuild under her vision. New history will be written. New laws will be established for all Mere, even those who once stood with the Blackened Dominion. A new balance of power emerges, as the Nihilithar Dominion rises as an unknown threat from beyond the skies. Calian and Lysara remain in a state of unconsciousness, their souls scarred by the touch of the Outer God. Calian awakened days later, consumed by the memory of the destruction he caused. He is no longer seen as an Eminarch; he is seen as the catalyst for the end.</p>
 
             <p style="margin-bottom: 40px;">Across Mundus, fear spreads like a plague. The Mere now understand that something far greater has begun. Old warnings from Aien return to the surface, prophecies of a being that would descend to bring ruin as a punishment for the defiance of Zephryn. Now, that warning is no longer a distant myth. Mundus has changed. Beings from beyond this plane now walk its surface, and they do not come in peace.</p>
-</article>
 
             <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255, 107, 157, 0.2); text-align: center;">
                 <nav class="breadcrumb" style="margin-bottom: 15px; font-size: 0.55rem; opacity: 0.7;">
                     <span class="separator">[</span>
-                    <span style="color: #ffc048;">1</span>
+                    <a href="chapter1.html">1</a>
                     <span class="separator">|</span>
                     <a href="chapter2.html">2</a>
                     <span class="separator">|</span>
@@ -113,7 +112,7 @@
                     <span class="separator">|</span>
                     <a href="chapter4.html">4</a>
                     <span class="separator">|</span>
-                    <a href="chapter5.html">5</a>
+                    <span style="color: #ffc048;">5</span>
                     <span class="separator">]</span>
                 </nav>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -134,6 +133,7 @@
             const menu = document.getElementById('menuContent');
             menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
         }
+        
         window.onscroll = function() {
             const btn = document.getElementById("scrollToTop");
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -142,6 +142,7 @@
                 btn.style.display = "none";
             }
         };
+        
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
