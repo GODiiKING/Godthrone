@@ -84,6 +84,7 @@ body {
     backdrop-filter: blur(10px);
     overflow: hidden; /* Clips the "Secret Sauce" animations */
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform; /* Hardware optimization for interactions */
 }
 
 .menu-toggle:hover {
@@ -158,7 +159,7 @@ body {
     grid-template-columns: repeat(auto-fit, 220px); 
     gap: 20px; 
     width: 100%;
-    max-width: 960px; /* (4 cards * 220px) + gaps */
+    max-width: 940px; /* FIXED: (4 cards * 220px) + (3 gaps * 20px) for precise centering */
     margin: 0 auto;
     justify-content: center;
 }
@@ -176,8 +177,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* THE FIX: Centers content vertically */
-    min-height: 1px;         /* THE FIX: Alignment safety guard */
+    justify-content: center; /* Centers content vertically */
+    min-height: 1px;         /* Alignment safety guard */
     width: 100%;
     max-width: 220px;
     margin: 0 auto;
@@ -185,6 +186,7 @@ body {
     opacity: 0;
     transform: translateY(15px);
     animation: fadeUp 0.6s ease forwards;
+    will-change: transform; /* Hardware optimization for micro-interactions */
 }
 
 .card:hover {
@@ -303,6 +305,7 @@ body {
 .card:nth-child(1) { animation-delay: 0.1s; }
 .card:nth-child(2) { animation-delay: 0.15s; }
 .card:nth-child(3) { animation-delay: 0.2s; }
+.card:nth-child(4) { animation-delay: 0.25s; } /* FIXED: Added missing 4th card delay step */
 
 /* 7. RESPONSIVE (MOBILE & TABLET) */
 @media (max-width: 1000px) {
@@ -320,22 +323,4 @@ body {
     .title h1 { 
         font-size: 2.5rem; 
     }
-}
-
-/* --- ITEM EQUIPMENT & ANIMA BADGES --- */
-.fusion-group { 
-    display: inline-flex; 
-    align-items: center; 
-    gap: 5px; 
-    background: rgba(255, 255, 255, 0.05); 
-    padding: 2px 6px; 
-    border-radius: 4px; 
-    border: 1px solid rgba(255, 107, 157, 0.2); 
-}
-
-.item-icon { 
-    width: 16px; 
-    height: 16px; 
-    border-radius: 2px; 
-    border: 1px solid #ff6b9d; 
 }
