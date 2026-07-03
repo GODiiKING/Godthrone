@@ -1,34 +1,75 @@
 # Changelog
 
-
-## 5/17/2026
-## Alpha v1.0 Code Review Overhaul
-
-**Branch:** `GODiiKING/Godthrone` at `14-code-review-alpha-v1.0`
-
-### Overview
-
-This massive update introduces over 4000 code modifications to standardize the frontend architecture of the Godthrone universe. The entire user interface has been completely restructured into a clean Wikipedia inspired design pattern featuring a unified dark theme and pink accents. Messy layouts and fragmented styling have been purged across multiple core files to establish a production ready foundation for coworkers and future public deployment.
-
----
-
+## [1.0.0] - 2025-08-29
 ### Added
+- Initial commit
+- Add missing files
+- Update README with story and project structure
 
-* Global CSS configuration architecture built to seamlessly control design rules across all lore pages
-* New breadcrumb and numerical navigation systems `[1 | 2 | 3 | 4 | 5]` for streamlined multi page character profiles
-* Dedicated mobile optimization media queries to ensure layout stability across small screens and handheld devices
-* A stylized fixed smooth scroll to top utility action button with pink accents
+## [1.0.0] - 2025-09-13
+### Added
+- Godthrone
+- Godthrone second setup
+- Third setup
 
-### Changed
+## [1.0.0] - 2025-12-25
+### Added
+- Loremenu
+- Protagonist(lore) separate pages
 
-* Completely overhauled the character layout profiles into a standardized Wikipedia style blueprint
-* Hard shrunk profile image cards to a strict 160px width to ensure consistent visual balance and clean text wrapping
-* Upgraded the global visual hierarchy with an immersive dark background theme complemented by vibrant pink titles and borders
-* Restructured the local layout files to inherit design system variables directly from the root global style sheets
-* Streamlined system font integration utilizing Google Fonts Acme and Lexend Exa uniformly
+## [1.0.0] - 2025-12-26
+### Added
+- Protagonist bio(section) made for each character
+- Loremenu
 
+## [1.0.0] - 2025-12-27
+### Added
+- Added alignments images & worldbuilding menu
+
+## [1.0.0] - 2025-12-28
+### Added
+- Audio for story
+
+## [1.0.0] - 2026-05-17
+### Refactored
+- Revamp project architecture into unified Wikipedia design system
+
+## [1.0.0] - 2026-05-18
+### Refactored
+- Adapt remaining (mythos) pages to unified Wikipedia design system
+
+## [1.0.0] - 2026-05-20
+### Refactored
+- Adapt remaining (powersystem) pages to unified Wikipedia design system
+- Adapt remaining (worldbuilding) pages to unified Wikipedia design system
+
+## [1.0.0] - 2026-05-21
+### Refactored
+- Integrate visual assets into unified Wikipedia design system
+
+## [1.0.0] - 2026-05-23
+### Refactored
+- Unify cross-page navigation links, integrate novel chapters, and implement Blackened Dominion legion sections
+
+## [1.0.0] - 2026-05-28
+### Refactored
+- Fix breadcrumb links and unify structure across all pages
+
+## [1.0.0] - 2026-05-31
+### Refactored
+- Clean code structure and normalize indentation
+
+## [1.0.0] - 2026-06-03
+### Refactored
+- Fix breadcrumb navigation and add mythos/powersystem images
+
+## [1.0.0] - 2026-06-04
 ### Fixed
+- Typo in anima section
+### Refactored
+- Added lorem text across mythos section
+- Added lorem text across powersystem section
 
-* Fixed and synchronized the menu navigation panel behavior across all five secondary lore and protagonist files
-* Removed broken redundant layout containers that caused unintended page alignment shifting
-* Cleaned up massive blocks of empty white space, dangling tags, and duplicate embedded script definitions inside the document bodies
+## [1.0.0] - 2026-06-06
+### Changed
+- Clean some mainmenu pages
