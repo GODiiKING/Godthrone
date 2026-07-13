@@ -26,7 +26,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 54px; /* INCREASE this number to move it further RIGHT */
+    
+    /* This breaks it out of the center flex layout */
+    position: absolute; 
+    
+    /* Example: This puts the button near the bottom center */
+    bottom: 25%; 
+    left: 55%;
+    transform: translateX(-50%); /* Keeps it perfectly centered horizontally */
 }
 
 /* GLOBAL CSS BUTTON REDESIGN */
