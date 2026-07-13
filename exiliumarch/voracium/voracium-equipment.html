@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godthrone | Voracium Equipment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/global.css">
+    <style>
+        .fusion-group { display: inline-flex; align-items: center; gap: 5px; background: rgba(255, 255, 255, 0.05); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(255, 107, 157, 0.2); }
+        .item-icon { width: 16px; height: 16px; border-radius: 2px; border: 1px solid #ff6b9d; }
+    </style>
+</head>
+<body>
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../loremenu/loremenu.html">Lore</a>
+          <a href="../../novels/novelsmenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../../mainmenu.html">HOME</a> <span class="separator">/</span>
+            <a href="../../exiliumarch/exiliumarchmenu.html">EXILIUMARCH</a> <span class="separator">/</span>
+            <a href="../../novels/novelsmenu.html">NOVELS</a> <span class="separator">/</span>
+            <span class="current">VORACIUM</span>
+        </nav>
+
+        <nav class="breadcrumb" style="margin-top: -15px; margin-bottom: 30px; font-size: 0.55rem; opacity: 0.7;">
+            <span class="separator">[</span>
+            <a href="./voracium.html">1</a> <span class="separator">|</span>
+            <a href="./voracium-stats.html">2</a> <span class="separator">|</span>
+            <a href="./voracium-proficiencies.html">3</a> <span class="separator">|</span>
+            <a href="./voracium-equipment.html">4</a> <span class="separator">|</span>
+            <a href="./voracium-chronicles.html">5</a>
+            <span class="separator">]</span>
+        </nav>
+
+        <div class="title" style="margin-bottom: 25px;">
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px;">EQUIPMENT</h1>
+        </div>
+
+        <section style="max-width: 900px; width: 100%;">
+            <div class="card" style="max-width: 100%; padding: 35px; flex-direction: row; gap: 30px; text-align: left; align-items: flex-start;">
+                <img src="./images/falsesovereign.jpg" style="width: 150px; border: 2px solid #ff6b9d; border-radius: 10px;">
+                <div style="flex: 1;">
+                    <h3 style="font-size: 1.2rem; color: #ff6b9d;">False Sovereign</h3>
+
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 15px 0; font-size: 0.6rem;">
+                        <div class="fusion-group"><img src="../../image/powersystem/anima/toxicanima.png" class="item-icon"><span>Toxic</span></div>
+                        <div class="fusion-group"><img src="../../image/powersystem/anima/rageanima.png" class="item-icon"><span>Rage</span></div>
+                        <div class="fusion-group"><img src="../../image/powersystem/anima/hasteanima.png" class="item-icon"><span>Haste</span></div>
+                    </div>
+                    
+                    <p style="font-size: 0.65rem; line-height: 1.7; opacity: 0.9; margin-bottom: 1.5rem;">Forged from the melted bones of three fallen tyrants and infused with their dying curses, False Sovereign was born when the Toxicsword's corruption merged with the Ragesword's endless fury and the Hasteword's manic velocity. The resulting blade is not just a weapon, but a crown of lies made manifest - promising dominion while delivering only the sweet poison of absolute power.</p>
+
+                    <p style="font-size: 0.65rem; line-height: 1.7; opacity: 0.9; margin-bottom: 1.5rem;">
+                    The Toxicsword's essence seeps through every strike, injecting a venom that doesn't merely kill but transforms. Each wound becomes a injection point for corruption that spreads like wildfire through the victim's moral foundation, turning saints into sinners and heroes into tyrants. The toxin doesn't destroy - it perverts, making the wounded believe their darkest impulses are righteous commands.</p>
+
+                    <p style="font-size: 0.65rem; line-height: 1.7; opacity: 0.9; margin-bottom: 1.5rem;">The Hasteword grants the blade supernatural speed, moving faster than conscience can intervene. Decisions are made and executed before wisdom can whisper warnings, creating a feedback loop where increasingly terrible choices happen too quickly for regret to form.</p>
+
+                    <p style="font-size: 0.65rem; line-height: 1.7; opacity: 0.9; margin-bottom: 1.5rem;">
+                    False Sovereign whispers promises of kingship to all who grasp it, but the crown it offers is woven from toxified rage and reckless haste - the perfect trap for those who mistake brutality for leadership and corruption for power.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "flex" : "none";
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>

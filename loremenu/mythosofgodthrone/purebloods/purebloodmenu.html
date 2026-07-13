@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the greatest battle arena in the world">
+    <title>Godthrone | Choose Your Path</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../../css/global.css">
+</head>
+<body>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuContent">
+          <a href="../../../mainmenu.html">Home</a>
+          <a href="../../../loremenu/loremenu.html">Lore</a>
+          <a href="../../../novels/storymenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="breadcrumb">
+    <a href="../../../mainmenu.html">Home</a>
+    <span class="separator">/</span>
+    <a href="../../../loremenu/mythosofgodthrone/mythos.html">Mythos</a>
+    <span class="separator">/</span>
+    <a href="../../../novels/storymenu.html">Novels</a>
+    <span class="separator">/</span>
+    <span class="current">Choose Your Pureblood</span>
+</nav>
+
+        <div class="interface">
+            <a href="../../../loremenu/mythosofgodthrone/purebloods/zizius/zizius.html" class="card">
+                <img src="../../../image/mythosofgodthrone/purebloods/purebloods1.png" alt="Browser Game" class="img-avatar">
+                <h3>Zizius</h3>
+                <p class="line-1">Order and Authority</p>
+                <p class="line-2">"The unyielding law of existence bends to my will; chaos shall kneel before my decree."</p>
+            </a>
+            
+            <a href="../../../loremenu/mythosofgodthrone/purebloods/kiana/kiana.html" class="card">
+                <img src="../../../image/mythosofgodthrone/purebloods/purebloods2.png" alt="Lore" class="img-avatar">
+                <h3>Kiana</h3>
+                <p class="line-1">Creation and Renewal</p>
+                <p class="line-2">"From the ashes of the old, I craft the new; life and death are threads in my tapestry.</p>
+            </a>
+            
+            <a href="../../../loremenu/mythosofgodthrone/purebloods/aien/aien.html" class="card">
+                <img src="../../../image/mythosofgodthrone/purebloods/purebloods3.png" alt="Story" class="img-avatar">
+                <h3>Aien</h3>
+                <p class="line-1">Chaos and Change</p>
+                <p class="line-2">"I am the storm that shatters foundations; only through destruction can creation thrive."</p>
+            </a>
+
+            <a href="../../../loremenu/mythosofgodthrone/purebloods/xezphine/xezphine.html" class="card">
+                <img src="../../../image/mythosofgodthrone/purebloods/purebloods4.png" alt="Story" class="img-avatar">
+                <h3>Xezphine</h3>
+                <p class="line-1">Knowledge and Mystery</p>
+                <p class="line-2">"Truth lies veiled in shadows; seek me, and you may find enlightenment or oblivion."</p>
+            </a>
+    </div>
+
+    <button id="scrollToTop" onclick="scrollToTop()" 
+            style="display: none; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #000000; border: 1px solid #ff6b9d; color: #ff6b9d; cursor: pointer; z-index: 9999; align-items: center; justify-content: center; font-size: 20px;">
+            ↑
+        </button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "flex"; 
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

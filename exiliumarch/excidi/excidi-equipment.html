@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godthrone | Excidi Equipment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/global.css">
+    <style>
+        .fusion-group { display: inline-flex; align-items: center; gap: 5px; background: rgba(255, 255, 255, 0.05); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(255, 107, 157, 0.2); }
+        .item-icon { width: 16px; height: 16px; border-radius: 2px; border: 1px solid #ff6b9d; }
+    </style>
+</head>
+<body>
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../loremenu/loremenu.html">Lore</a>
+          <a href="../../novels/novelsmenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="../../mainmenu.html">HOME</a> <span class="separator">/</span>
+            <a href="../../exiliumarch/exiliumarchmenu.html">EXILIUMARCH</a> <span class="separator">/</span>
+            <a href="../../novels/novelsmenu.html">NOVELS</a> <span class="separator">/</span>
+            <span class="current">JOKER</span>
+        </nav>
+
+        <nav class="breadcrumb" style="margin-top: -15px; margin-bottom: 30px; font-size: 0.55rem; opacity: 0.7;">
+            <span class="separator">[</span>
+            <a href="./excidi.html">1</a> <span class="separator">|</span>
+            <a href="./excidi-stats.html">2</a> <span class="separator">|</span>
+            <a href="./excidi-proficiencies.html">3</a> <span class="separator">|</span>
+            <a href="./excidi-equipment.html">4</a> <span class="separator">|</span>
+            <a href="./excidi-chronicles.html">5</a>
+            <span class="separator">]</span>
+        </nav>
+
+        <div class="title" style="margin-bottom: 25px;">
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px;">EQUIPMENT</h1>
+        </div>
+
+        <section style="max-width: 900px; width: 100%;">
+            <div class="card" style="max-width: 100%; padding: 35px; flex-direction: row; gap: 30px; text-align: left; align-items: flex-start;">
+                <img src="./images/necropulsereaper.jpg" style="width: 150px; border: 2px solid #ff6b9d; border-radius: 10px;">
+                <div style="flex: 1;">
+                    <h3 style="font-size: 1.2rem; color: #ff6b9d;">Necropulse Reaper</h3>
+
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 15px 0; font-size: 0.6rem;">
+                        <div class="fusion-group"><img src="../../image/powersystem/anima/hasteanima.png" class="item-icon"><span>Haste</span></div>
+                        <div class="fusion-group"><img src="../../image/powersystem/anima/etherealanima.png" class="item-icon"><span>Ethereal</span></div>
+                        <div class="fusion-group"><img src="../../image/powersystem/anima/ghostanima.png" class="item-icon"><span>Ghost</span></div>
+                        <div class="fusion-group"><img src="../../image/powersystem/anima/drainanima.png" class="item-icon"><span>Drain</span></div>
+                    </div>
+                    
+                    <p style="font-size: 0.65rem; line-height: 1.7; opacity: 0.9; margin-bottom: 1.5rem;">Born from the catastrophic merger of four spectral blades, this weapon exists in a constant state of impossible motion. The Haste Sword grants it velocity beyond mortal comprehension, striking faster than thought itself can form. The Ethereal Sword allows it to phase between dimensions mid-swing, bypassing all physical defenses by existing in multiple planes simultaneously.</p>
+
+                    <p style="font-size: 0.65rem; line-height: 1.7; opacity: 0.9; margin-bottom: 1.5rem;">
+                    The Ghost Sword's essence makes each strike pass through armor and flesh to wound the soul directly, leaving victims intact but spiritually hemorrhaging. Meanwhile, the Drain Sword hungrily feeds on everything the phantom blade touches - not just blood and life force, but memories, emotions, and the very essence of existence itself.</p>
+
+                    <p style="font-size: 0.65rem; line-height: 1.7; opacity: 0.9; margin-bottom: 1.5rem;">When all four powers converge, the weapon becomes a blur of translucent death that moves through battlefields like a supernatural hurricane. It strikes from angles that shouldn't exist, draining victims before they even realize they've been cut. The wielder becomes a ghost-like figure wrapped in impossible speed, phasing in and out of reality while leaving behind only empty husks drained of everything that once made them whole.</p>
+
+                    <p style="font-size: 0.65rem; line-height: 1.7; opacity: 0.9; margin-bottom: 1.5rem;">The blade's true horror lies in its efficiency - entire armies can fall in moments, their life forces absorbed so quickly that their bodies remain standing even as their souls are completely devoured. It doesn't just kill; it erases, leaving behind perfect corpses with expressions of confusion, as if they died wondering what happened to their very sense of self.</p>
+
+                    <p style="font-size: 0.65rem; line-height: 1.7; opacity: 0.9;">It is the ultimate assassin's weapon unseen, unfelt, and absolutely merciless.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "flex" : "none";
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>

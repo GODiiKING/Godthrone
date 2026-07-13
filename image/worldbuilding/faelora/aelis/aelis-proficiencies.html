@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godthrone | Kiana Magic</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../../../css/global.css">
+
+    <style>
+        /* INLINE MAGIC ICON COMPONENT */
+        .fusion-line {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            color: #ffc048;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .magic-icon {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid #ff6b9d;
+            object-fit: cover;
+        }
+
+        .plus {
+            color: #ff6b9d;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
+        <div id="menuContent">
+          <a href="../../../../mainmenu.html">Home</a>
+          <a href="../../../../loremenu/loremenu.html">Lore</a>
+          <a href="../../../../novels/novelsmenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container wiki-container">
+        <!-- BREADCRUMBS -->
+        <nav class="breadcrumb">
+            <a href="../../../../mainmenu.html">HOME</a> <span class="separator">/</span>
+            <a href="../../../../loremenu/loremenu.html">LORE</a> <span class="separator">/</span>
+            <span class="current">KIANA</span>
+        </nav>
+
+        <nav class="breadcrumb" style="margin-top: -15px; margin-bottom: 30px; font-size: 0.55rem; opacity: 0.7;">
+            <span class="separator">[</span>
+            <a href="./aelis.html">1</a> <span class="separator">|</span>
+            <a href="./aelis-stats.html">2</a> <span class="separator">|</span>
+            <a href="./aelis-proficiencies.html">3</a> <span class="separator">|</span>
+            <a href="./aelis-equipment.html">4</a> <span class="separator">|</span>
+            <a href="./aelis-chronicles.html">5</a>
+            <span class="separator">]</span>
+        </nav>
+
+        <!-- MAGIC CATEGORY -->
+        <div class="title" style="margin-bottom: 25px;">
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px;">MAGIC</h1>
+        </div>
+
+        <div class="interface" style="margin-bottom: 50px;">
+            <div class="card" style="max-width: 460px; grid-column: span 2;">
+                <h3 style="color: #ff6b9d;">Helllich Symbiosis</h3>
+                
+                <div class="fusion-line">
+                    <img src="../../../../image/powersystem/magic/firemagic.png" class="magic-icon" alt="Fire">
+                    <span>Fire</span>
+                    <span class="plus">+</span>
+                    <img src="../../../../image/powersystem/magic/deathmagic.png" class="magic-icon" alt="Death">
+                    <span>Death</span>
+                    <span class="plus">+</span>
+                    <img src="../../../../image/powersystem/magic/shadowmagic.png" class="magic-icon" alt="Shadow">
+                    <span>Shadow</span>
+                    <span class="plus">+</span>
+                    <img src="../../../../image/powersystem/magic/bloodmagic.png" class="magic-icon" alt="Blood">
+                    <span>Blood</span>
+                </div>
+
+                <p class="line-2">The living fire that death cannot quench.</p>
+            </div>
+
+            <div class="card" style="max-width: 460px; grid-column: span 2;">
+                <h3 style="color: #ff6b9d;">Azazeal</h3>
+
+                <div class="fusion-line">
+                    <img src="../../../../image/powersystem/anti-magic/endofworlds.png" class="magic-icon" alt="End">
+                    <span>End of Worlds</span>
+                    <span class="plus">+</span>
+                    <img src="../../../../image/powersystem/anti-magic/chaosaether.png" class="magic-icon" alt="Chaos">
+                    <span>Chaos Aether</span>
+                </div>
+
+                <p class="line-2">The first silence before existence.</p>
+            </div>
+        </div>
+
+        <!-- ANTI-MAGIC CATEGORY -->
+        <div class="title" style="margin-bottom: 25px;">
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px;">ANTI-MAGIC</h1>
+        </div>
+
+        <div class="interface">
+            <div class="card" style="max-width: 460px; grid-column: span 2;">
+                <h3 style="color: #ff6b9d;">+Azazeal</h3>
+                
+                <div class="fusion-line">
+                    <img src="../../../../image/powersystem/anti-magic/endofworlds.png" class="magic-icon" alt="End">
+                    <span>End of Worlds</span>
+                    <span class="plus">+</span>
+                    <img src="../../../../image/powersystem/anti-magic/chaosaether.png" class="magic-icon" alt="Chaos">
+                    <span>Chaos Aether</span>
+                </div>
+                
+                <div class="fusion-line" style="color: #888; font-size: 0.55rem; margin-top: -5px;">
+                    (End of Worlds, Chaos Aether)
+                </div>
+
+                <p class="line-2" style="font-size: 0.65rem; margin-top: 10px;">From the void before creation, I speak the first silence; before light, before time, before the error of existence</p>
+            </div>
+
+            <div class="card" style="max-width: 460px; grid-column: span 2;">
+                <h3 style="color: #ffc048;">One Above All</h3>
+
+                <div class="fusion-line">
+                    <img src="../../../../image/powersystem/anti-magic/MacGuffin-antimagic.png" class="magic-icon" alt="Rule">
+                    <span>Rule Maker</span>
+                </div>
+
+                <div class="fusion-line" style="color: #888; font-size: 0.55rem; margin-top: -5px;">
+                    (MacGuffin)
+                </div>
+
+                <p class="line-2" style="font-size: 0.65rem; margin-top: 10px;">I am the rule that writes all other rules; existence holds its breath awaiting my verdict, and nothingness itself kneels before my judgment</p>
+            </div>
+        </div>
+
+        <button id="scrollToTop" onclick="scrollToTop()" 
+            style="display: none; position: fixed; bottom: 20px; right: 20px; width: 45px; height: 45px; border-radius: 50%; background: #000; border: 1px solid #ff6b9d; color: #ff6b9d; cursor: pointer; z-index: 9999; align-items: center; justify-content: center;">
+            ↑
+        </button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "flex" : "none";
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>

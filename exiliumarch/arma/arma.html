@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile of Arma: The Sovereign of Supremacy">
+    <title>Godthrone | Arma Chronicles</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <style>
+        .wiki-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        .wiki-header {
+            font-family: 'Acme';
+            font-size: 1.3rem;
+            color: #ff6b9d;
+            border-bottom: 1px solid rgba(255, 107, 157, 0.3);
+            margin: 30px 0 15px 0;
+            padding-bottom: 5px;
+        }
+
+        .wiki-subheader {
+            font-family: 'Acme';
+            font-size: 1rem;
+            color: #fff;
+            margin: 20px 0 10px 0;
+        }
+
+        /* HARD SHRINK: Image cards reduced to 160px */
+        .img-card-right {
+            float: right;
+            width: 160px;
+            margin: 5px 0 15px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 107, 157, 0.4);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .img-card-left {
+            float: left;
+            width: 160px;
+            margin: 5px 20px 15px 0;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 107, 157, 0.4);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .wiki-img {
+            width: 100%;
+            height: 140px; 
+            object-fit: cover; 
+            display: block;
+            border-radius: 4px;
+        }
+
+        .img-caption {
+            font-size: 0.5rem;
+            color: #ffc048;
+            margin-top: 5px;
+            padding: 0 5px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .info-table {
+            width: 100%;
+            font-size: 0.5rem;
+            border-collapse: collapse;
+            margin-top: 8px;
+        }
+
+        .info-table td {
+            padding: 3px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-label { color: #fff; font-weight: bold; width: 45%; }
+        .info-data { color: #ffc048; text-align: right; }
+
+        .wiki-text {
+            font-size: 0.72rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        .wiki-text p { margin-bottom: 15px; }
+
+        .clear { clear: both; }
+
+        @media (max-width: 768px) {
+            .img-card-right, .img-card-left { float: none; width: 100%; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../loremenu/loremenu.html">Lore</a>
+          <a href="../../novels/novelsmenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container wiki-container">
+        <nav class="breadcrumb">
+            <a href="../../mainmenu.html">HOME</a> <span class="separator">/</span>
+            <a href="../../exiliumarch/exiliumarchmenu.html">EXILIUMARCH</a> <span class="separator">/</span>
+            <a href="../../novels/novelsmenu.html">NOVELS</a> <span class="separator">/</span>
+            <span class="current">ARMA</span>
+        </nav>
+
+        <nav class="breadcrumb" style="margin-top: -15px; margin-bottom: 30px; font-size: 0.55rem; opacity: 0.7;">
+            <span class="separator">[</span>
+            <span style="color: #ffc048;">1</span> <span class="separator">|</span>
+            <a href="./arma-stats.html">2</a> <span class="separator">|</span>
+            <a href="./arma-proficiencies.html">3</a> <span class="separator">|</span>
+            <a href="./arma-equipment.html">4</a> <span class="separator">|</span>
+            <a href="./arma-chronicles.html">5</a>
+            <span class="separator">]</span>
+        </nav>
+
+        <div class="title" style="margin-bottom: 25px;">
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px;">WIKIPEDIA</h1>
+        </div>
+
+        <section>
+            <div class="img-card-right">
+                <img src="images/arma1.png" class="wiki-img">
+                <div class="img-caption">Arma</div>
+                <table class="info-table">
+                    <tr><td class="info-label">Title</td><td class="info-data">Sovereign of Supremacy</td></tr>
+                    <tr><td class="info-label">Power</td><td class="info-data">90/100</td></tr>
+                    <tr><td class="info-label">Domain</td><td class="info-data">Sentient Violence</td></tr>
+                    <tr><td class="info-label">Role</td><td class="info-data">Limitless Inquisitor</td></tr>
+                </table>
+            </div>
+
+            <div class="wiki-text">
+                <p>
+                    <strong>Arma: The Ultimate Omniblade</strong> Where concepts take physical form and thoughts become tangible steel. There exists a being who discovered the ultimate secret. That every weapon ever conceived, dreamed, or imagined exists simultaneously.
+                </p>
+                <p>
+                    In a dimensional infinite realities. Manifesting as the perfect synthesis between wielder and blade that transcends the illusion of separation. Simultaneously present in every act of combat throughout existence.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section id="appearance">
+            <h2 class="wiki-header">Appearance</h2>
+            <div class="img-card-left">
+                <img src="images/arma1.png" class="wiki-img">
+                <div class="img-caption">The Overpowered Vessel.</div>
+            </div>
+            <div class="wiki-text">
+                <p>Arma manifests with a presence that demands absolute submission from the surrounding space. His form is often wreathed in a corona of overwhelming energy that signifies his sentient dominance. He carries himself with the casual contempt of a being for whom impossibility has not yet been invented.</p>
+                <p>His aesthetic is one of refined supremacy, appearing as a martial aristocrat of destruction. Every movement is perfectly calculated, and his gaze carries the weight of an inquisitor who has already found the omniverse guilty of being insufficient.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section id="background">
+            <h2 class="wiki-header">Background</h2>
+            <div class="wiki-text">
+                <p>Born in the void before the first world cycle, Arma represents the original impulse to surpass. He emerged when reality was still a draft, deciding that he would be the final authority. He is not a part of creation, but a consciousness that claimed ownership over it.</p>
+                <p>His history is a series of benchmarks where he reset the standard for what is considered powerful. He does not evolve; he simply asserts his supremacy over any new form of energy or resistance that dares to manifest in his presence.</p>
+            </div>
+        </section>
+
+        <section id="personality">
+            <h2 class="wiki-header">Personality</h2>
+            <div class="img-card-right">
+                <img src="images/arma1.png" class="wiki-img">
+                <div class="img-caption">Chaotic Neutral Individualist.</div>
+            </div>
+            <div class="wiki-text">
+                <p>Arma is a <strong>Chaotic Neutral</strong> individualist. He follows only his own heart, shirking rules, traditions, and the expectations of both gods and mortals. His own freedom is his only priority, with concepts of good and evil falling far behind his need to remain unbound.</p>
+                <p>He behaves with a clinical arrogance, viewing the protocols of the High Gods as toys and the struggles of lesser beings as a performance. He strikes only when his own supremacy is questioned or when curiosity demands a display of violence.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section id="abilities">
+            <h2 class="wiki-header">Abilities</h2>
+            <div class="wiki-text">
+                <p>Arma operates at a power level of 90/100, possessing max-tier ratings across all primary cosmic stats. Every spell cast in his presence and every anti-magic field used against him is immediately analyzed and converted into his own arsenal.</p>
+                <p>His "Sentient Dominance" allows him to phase through dimensional restrictors and claim ownership over external mana signatures. He does not fight for power; he simply reminds reality that all power already belongs to the Sovereign of Supremacy.</p>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2 class="wiki-header">History</h2>
+            <h3 class="wiki-subheader">The Memento Mori Era</h3>
+            <div class="wiki-text">
+                <p>Chronicles record Arma wielding <strong>Memento Mori</strong>, a weapon born from the fusion of Drain and Ethereal blades. This instrument is not for execution, but for coronation—declaring Arma as the rightful owner of the victim's essence.</p>
+                
+                <div class="img-card-left">
+                    <img src="images/infiniteinfinitus.jpg" class="wiki-img">
+                    <div class="img-caption">The Sovereign's Declaration.</div>
+                </div>
+
+                <p>Using this blade, Arma cut through concepts and armies with equal contempt. He phases through barriers by refusing to acknowledge their right to exist, draining the power of his foes while turning their very potential into a jewel for his crown of supremacy.</p>
+                <p>He remains the Limitless Inquisitor, a ghost wraped in undiluted dominance, waiting for reality to present a challenge worthy of his sentient violence.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <div style="margin-top: 60px; display: flex; flex-direction: column; align-items: center; gap: 15px; padding-bottom: 60px;">
+            <button class="menu-toggle" onclick="window.location.href='../../browsergame.html'" style="padding: 12px 25px; border-color: #ffc048; color: #ffc048; background: transparent; cursor: pointer;">PLAY BATTLE ARENA</button>
+        </div>
+
+        <button id="scrollToTop" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #000; border: 1px solid #ff6b9d; color: #ff6b9d; cursor: pointer; z-index: 9999; align-items: center; justify-content: center; font-size: 20px;">↑</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "flex"; 
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>

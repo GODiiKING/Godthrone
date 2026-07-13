@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile of Hoodini: Equilibrium of Creation">
+    <title>Godthrone | Hoodini Chronicles</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../css/global.css">
+
+    <style>
+        .wiki-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        .wiki-header {
+            font-family: 'Acme';
+            font-size: 1.3rem;
+            color: #ff6b9d;
+            border-bottom: 1px solid rgba(255, 107, 157, 0.3);
+            margin: 30px 0 15px 0;
+            padding-bottom: 5px;
+        }
+
+        .wiki-subheader {
+            font-family: 'Acme';
+            font-size: 1rem;
+            color: #fff;
+            margin: 20px 0 10px 0;
+        }
+
+        /* HARD SHRINK: Image cards reduced to 160px */
+        .img-card-right {
+            float: right;
+            width: 160px;
+            margin: 5px 0 15px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 107, 157, 0.4);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .img-card-left {
+            float: left;
+            width: 160px;
+            margin: 5px 20px 15px 0;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 107, 157, 0.4);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .wiki-img {
+            width: 100%;
+            height: 140px; 
+            object-fit: cover; 
+            display: block;
+            border-radius: 4px;
+        }
+
+        .img-caption {
+            font-size: 0.5rem;
+            color: #ffc048;
+            margin-top: 5px;
+            padding: 0 5px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .info-table {
+            width: 100%;
+            font-size: 0.5rem;
+            border-collapse: collapse;
+            margin-top: 8px;
+        }
+
+        .info-table td {
+            padding: 3px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-label { color: #fff; font-weight: bold; width: 45%; }
+        .info-data { color: #ffc048; text-align: right; }
+
+        .wiki-text {
+            font-size: 0.72rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        .wiki-text p { margin-bottom: 15px; }
+
+        .clear { clear: both; }
+
+        @media (max-width: 768px) {
+            .img-card-right, .img-card-left { float: none; width: 100%; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-panel">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ MENU</button>
+        <div id="menuContent">
+          <a href="../../mainmenu.html">Home</a>
+          <a href="../../loremenu/loremenu.html">Lore</a>
+          <a href="../../novels/novelsmenu.html">Novels</a>
+        </div>
+    </div>
+
+    <div class="container wiki-container">
+        <nav class="breadcrumb">
+            <a href="../../mainmenu.html">HOME</a> <span class="separator">/</span>
+            <a href="../../exiliumarch/exiliumarchmenu.html">EXILIUMARCH</a> <span class="separator">/</span>
+            <a href="../../novels/novelsmenu.html">NOVELS</a> <span class="separator">/</span>
+            <span class="current">ILLUSOR</span>
+        </nav>
+
+        <nav class="breadcrumb" style="margin-top: -15px; margin-bottom: 30px; font-size: 0.55rem; opacity: 0.7;">
+            <span class="separator">[</span>
+            <span style="color: #ffc048;">1</span> <span class="separator">|</span>
+            <a href="./illusor-stats.html">2</a> <span class="separator">|</span>
+            <a href="./illusor-proficiencies.html">3</a> <span class="separator">|</span>
+            <a href="./illusor-equipment.html">4</a> <span class="separator">|</span>
+            <a href="./illusor-chronicles.html">5</a>
+            <span class="separator">]</span>
+        </nav>
+
+        <div class="title" style="margin-bottom: 25px;">
+            <h1 style="font-size: 1.2rem; letter-spacing: 2px;">WIKIPEDIA</h1>
+        </div>
+
+        <section>
+            <div class="img-card-right">
+                <img src="./images/illusor1.png" class="wiki-img">
+                <div class="img-caption">Illusor</div>
+                <table class="info-table">
+                    <tr><td class="info-label">Title</td><td class="info-data">Equilibrium</td></tr>
+                    <tr><td class="info-label">Power</td><td class="info-data">90/100</td></tr>
+                    <tr><td class="info-label">Domain</td><td class="info-data">Primordial</td></tr>
+                    <tr><td class="info-label">Role</td><td class="info-data">Stalker</td></tr>
+                </table>
+            </div>
+
+            <div class="wiki-text">
+                <p>
+                    <strong>Illusor: Equilibrium of Creation</strong> is the entity that was already rewriting the rules of power when the multiverse first dared to dream. He dreams new realities into being while child's play flows through his mastery.
+                </p>
+                <p>
+                    As the <strong>Blind Primordial</strong>, Illusor does not cast spells; they cast themselves through him as naturally as light radiates from stars, making magical limitations a concept of the past.
+                </p>
+                <p>
+                    Time reverses at his whim while he simultaneously ages civilizations to dust. In his presence, the very concept of magical limitations becomes a joke.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section id="appearance">
+            <h2 class="wiki-header">Appearance</h2>
+            <div class="img-card-left">
+                <img src="./images/illusor1.png" class="wiki-img">
+                <div class="img-caption">The Invisible Master.</div>
+            </div>
+            <div class="wiki-text">
+                <p>Illusor's physical presence is a masterclass in subtlety and primordial grace. Though termed "Blind," his perception transcends ocular vision, appearing as a figure draped in garments that seem woven from the void between stars.</p>
+                <p>He carries an aura of absolute equilibrium. His movements are fluid and silent, reflecting his role as a Stalker among the Stars. In his presence, time seems to blur, mirroring his ability to reverse time or age civilizations to dust at a whim.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section id="background">
+            <h2 class="wiki-header">Background</h2>
+            <div class="wiki-text">
+                <p>Illusor emerged at the genesis of the dream, before the first laws of mana were even whispered. He is the guardian of the balance, ensuring that no single force of creation or destruction becomes absolute.</p>
+                <p>His history is one of quiet intervention. He does not seek the spotlight of history but instead stalks the leylines, correcting the "dream" whenever the concept of limitation is threatened by those who would seek to break reality.</p>
+            </div>
+        </section>
+
+        <section id="personality">
+            <h2 class="wiki-header">Personality</h2>
+            <div class="img-card-right">
+                <img src="./images/illusor1.png" class="wiki-img">
+                <div class="img-caption">Lawful Neutral Order.</div>
+            </div>
+            <div class="wiki-text">
+                <p>Illusor follows a <strong>Lawful Neutral</strong> alignment. He believes strongly in honor, order, and rules, but his primary allegiance is to his own primordial code. He behaves with the mercy-less precision of a judge or enforcer of the natural law.</p>
+                <p>He maintains a disciplined distance from the emotional conflicts of the Mundus. Like a monk of the stars, he follows the letter of a law that predates the High Gods, ensuring the equilibrium remains undisturbed.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section id="abilities">
+            <h2 class="wiki-header">Abilities</h2>
+            <div class="wiki-text">
+                <p>With an overall power level of 90/100, Illusor is a master of <strong>Equilibrium Creation</strong>. He possesses max-tier Magic and Creation attributes, allowing him to weave realities with the ease of breathing.</p>
+                <p>As a <strong>Stalker among the Stars</strong>, he excels in perceiving the unseen and striking with primordial authority. In his presence, the concept of magical limitation becomes a joke, as he manipulates the source code of the multiverse itself.</p>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2 class="wiki-header">History</h2>
+            <h3 class="wiki-subheader">The Primordial Dream</h3>
+            <div class="wiki-text">
+                <p>Chronicles record Illusor's actions during the first dream of power. While civilizations were still learning to crawl, he was already reversing time and aging those who sought to disrupt the balance to dust.</p>
+                
+                <div class="img-card-left">
+                    <img src="./images/illusor1.png" class="wiki-img">
+                    <div class="img-caption">Dreaming Reality.</div>
+                </div>
+
+                <p>He remains the silent master of child's play, watching from the interstellar spaces. He ensures that the flow of mana remains consistent, acting as the ultimate stalker who guards the equilibrium of all things yet to be dreamed.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <div style="margin-top: 60px; display: flex; flex-direction: column; align-items: center; gap: 15px; padding-bottom: 60px;">
+            <button class="menu-toggle" onclick="window.location.href='../../browsergame.html'" style="padding: 12px 25px; border-color: #ffc048; color: #ffc048; background: transparent; cursor: pointer;">PLAY BATTLE ARENA</button>
+        </div>
+
+        <button id="scrollToTop" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #000; border: 1px solid #ff6b9d; color: #ff6b9d; cursor: pointer; z-index: 9999; align-items: center; justify-content: center; font-size: 20px;">↑</button>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuContent');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "flex"; 
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>
