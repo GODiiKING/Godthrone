@@ -11,7 +11,7 @@
 body {
     font-family: 'Lexend Exa', sans-serif;
     /* Main Wallpaper Setup */
-    background: url("img/Godthronewallpaper.png") no-repeat center center fixed;
+    background: url("image/godthronechronicles.png") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -114,4 +114,141 @@ body {
 .scroll-to-top:hover {
     opacity: 1;
     box-shadow: 0 0 10px #ff6b9d;
+}
+
+/* Background wrapper */
+.bg-wrapper {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    background-color: black; /* FIXES WHITE SCREEN */
+}
+
+
+/* Default: desktop layout (Image 1) */
+/* Desktop: Image 1 layout */
+.bg-image {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.title-wrapper {
+    position: relative;
+    z-index: 10;
+    height: 100vh;          /* full screen height */
+    width: 100vw;           /* full screen width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    text-align: center;
+}
+
+
+
+.game-title {
+    font-size: clamp(2rem, 4vw, 6rem);
+    color: white;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 3vw, 2rem);
+    color: #c0c0c0;
+    margin-bottom: 40px;
+}
+
+.play-button {
+    margin-top: -20px; /* moves button UP */
+}
+
+
+
+
+.play-button:hover {
+    background-color: #1b1b1b;
+}
+
+
+/* full-screen flex centering instead of absolute px */
+.start-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.play-button {
+  display: inline-block;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.play-button:hover {
+  background-color: #1b1b1b;
+}
+
+.game-guide-link {
+  display: inline-block;
+  margin-top: 1px;
+  color: #9ea194;
+  text-decoration: none;
+}
+
+.game-guide-link:hover {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+/* Tablet & phone: Image 2 layout */
+@media (max-width: 768px) {
+    .bg-image {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* Tiny screens: flip if needed */
+@media (max-width: 480px) {
+    .bg-image {
+        transform: translate(-50%, -50%) scaleX(-1);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .bg-image {
+        transform: translate(-50%, -50%) scaleX(-1);
+    }
 }
